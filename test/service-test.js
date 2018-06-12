@@ -2,9 +2,9 @@
 
 'use strict'
 
-const tymly = require('tymly')
+const tymly = require('@wmfs/tymly')
 const path = require('path')
-const HlPgClient = require('hl-pg-client')
+const HlPgClient = require('@wmfs/hl-pg-client')
 const expect = require('chai').expect
 const process = require('process')
 const moment = require('moment')
@@ -44,7 +44,7 @@ describe('Tests the Ranking Service', function () {
       {
         pluginPaths: [
           path.resolve(__dirname, './../lib'),
-          require.resolve('tymly-pg-plugin')
+          require.resolve('@wmfs/tymly-pg-plugin')
         ],
         blueprintPaths: [
           path.resolve(__dirname, './fixtures/blueprint')

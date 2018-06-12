@@ -3,9 +3,9 @@
 
 const chai = require('chai')
 const expect = chai.expect
-const tymly = require('tymly')
+const tymly = require('@wmfs/tymly')
 const path = require('path')
-const HlPgClient = require('hl-pg-client')
+const HlPgClient = require('@wmfs/hl-pg-client')
 const process = require('process')
 const sqlScriptRunner = require('./fixtures/sql-script-runner.js')
 
@@ -34,7 +34,7 @@ describe('Tests the refresh risk score State Resource', function () {
       {
         pluginPaths: [
           path.resolve(__dirname, './..'),
-          require.resolve('tymly-pg-plugin')
+          require.resolve('@wmfs/tymly-pg-plugin')
         ],
         blueprintPaths: [
           path.resolve(__dirname, './fixtures/blueprint'),
