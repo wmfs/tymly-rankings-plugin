@@ -14,6 +14,12 @@
       "namespace": "test",
       "model": "food",
       "property": "rating"
+    },
+    "area": {
+      "namespace": "test",
+      "model": "area",
+      "property": "areaRating",
+      "sourceProperty": "areaCode"
     }
   }
 }
