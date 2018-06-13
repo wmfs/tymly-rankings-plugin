@@ -23,7 +23,6 @@
 # Logs and databases #
 ######################
 *.log
-*.sql
 *.sqlite
 
 ## Node ###
@@ -176,3 +175,5 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+package-lock.json
