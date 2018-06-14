@@ -3,7 +3,7 @@
 
 const chai = require('chai')
 const expect = chai.expect
-const tymly = require('@wmfs/tymly')
+const tymly = require('tymly')
 const path = require('path')
 const HlPgClient = require('@wmfs/hl-pg-client')
 const process = require('process')
