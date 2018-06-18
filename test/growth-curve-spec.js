@@ -3,6 +3,7 @@
 const chai = require('chai')
 const expect = chai.expect
 const calculateGrowthCurve = require('./../lib/components/services/rankings/calculate-growth-curve')
+const growthCurveIntersection = require('./../lib/components/services/rankings/growth-curve-intersection')
 
 function roundToSixDp (num) {
   return +(num.toFixed(7).slice(0, -1))
@@ -59,80 +60,4 @@ describe('growth curve validation', () => {
       } // for ...
     }) // describe ...
   } // for ...
-})
-
-function dayOnCurve (maxScore, tempScore, exp) {
-  const scoreRatio = maxScore / tempScore
-  const adjustedRatio = (scoreRatio - 1) / 81
-
-  const logRatio = Math.log(adjustedRatio)
-
-  const days = logRatio / exp
-
-  return Math.floor(days)
-} // dayOnCurve
-
-describe('score adjustment', () => {
-  const regressionCurves = [
-    {
-      maxScore: 146,
-      meanRisk: 79,
-      highRiskThreshold: 98,
-      exp: -0.0025,
-      expectedDays: 220
-    },
-    {
-      maxScore: 146,
-      meanRisk: 79,
-      highRiskThreshold: 98,
-      exp: -0.0004,
-      expectedDays: 1372 // spreadsheet caption says 1432 and 1171 but they're both wrong - if you examine the figures it is 1372
-    },
-    {
-      maxScore: 146,
-      meanRisk: 79,
-      highRiskThreshold: 98,
-      exp: -0.00088,
-      expectedDays: 624 // spreadsheet caption says 532, but checking the figures gives 624
-    }
-  ]
-
-  for (const curves of regressionCurves) {
-    const {
-      maxScore,
-      meanRisk,
-      highRiskThreshold,
-      exp,
-      expectedDays
-    } = curves
-
-    it(`${meanRisk} to ${highRiskThreshold} with exp = ${exp} takes ${expectedDays} days`, () => {
-      const baseline = dayOnCurve(maxScore, meanRisk, exp)
-      const target = dayOnCurve(maxScore, highRiskThreshold, exp)
-
-      const daysElapsed = target - baseline
-
-      expect(daysElapsed).to.equal(expectedDays)
-    })
-  }
-
-  for (const curves of regressionCurves) {
-    const {
-      maxScore: assessedScore,
-      meanRisk: temporaryScore,
-      highRiskThreshold: expectedScore,
-      exp,
-      expectedDays: elapsedDays
-    } = curves
-
-    it(`${temporaryScore} with exp = ${exp} after ${elapsedDays} days is ${expectedScore}`, () => {
-      const dayOffset = dayOnCurve(assessedScore, temporaryScore, exp)
-
-      const effectiveDaysElapsed = elapsedDays + dayOffset
-
-      const modifiedScore = calculateGrowthCurve(exp, effectiveDaysElapsed, assessedScore)
-
-      expect(Math.round(modifiedScore)).to.equal(expectedScore)
-    })
-  }
 })
