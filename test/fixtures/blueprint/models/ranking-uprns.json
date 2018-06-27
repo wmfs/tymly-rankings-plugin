@@ -18,6 +18,10 @@
       "type": "string",
       "description": "The range this property falls within"
     },
+    "distribution": {
+      "type": "number",
+      "description": "The distribution this property falls within"
+    },
     "lastAudit": {
       "type": "string"
     },
