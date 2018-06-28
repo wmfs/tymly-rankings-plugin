@@ -38,7 +38,7 @@
     "standard": "11.0.1",
     "@wmfs/hl-pg-client": "1.1.2",
     "@wmfs/tymly": "1.1.1",
-    "@wmfs/tymly-pg-plugin": "1.0.3"
+    "@wmfs/tymly-pg-plugin": "1.1.0"
   },
   "scripts": {
     "lint": "standard",
