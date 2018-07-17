@@ -1,3 +1,15 @@
+## [1.2.1](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.2.0...v1.2.1) (2018-07-17)
+
+
+### 🐛 Bug Fixes
+
+* don't need this import ([1fd0713](https://github.com/wmfs/tymly-rankings-plugin/commit/1fd0713))
+
+
+### 📦 Code Refactoring
+
+* moved generate stats out of boot time ([53e4e45](https://github.com/wmfs/tymly-rankings-plugin/commit/53e4e45))
+
 # [1.2.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.1.13...v1.2.0) (2018-07-17)
 
 
