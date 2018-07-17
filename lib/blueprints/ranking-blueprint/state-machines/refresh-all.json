@@ -1,0 +1,20 @@
+{
+  "Comment": "State machine to refresh all rankings.",
+  "version": "1.0",
+  "StartAt": "Refresh",
+  "States": {
+    "Refresh": {
+      "Type": "Task",
+      "Resource": "module:refreshAll",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

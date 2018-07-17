@@ -19,6 +19,7 @@ process.on('unhandledRejection', (reason, p) => {
 describe('Tests the Ranking State Resource', function () {
   this.timeout(15000)
 
+  const REFRESH_ALL_STATE_MACHINE_NAME = `wmfs_refreshAll_1_0`
   const REFRESH_STATE_MACHINE_NAME = `test_refreshRanking_1_0`
   const SET_REFRESH_STATE_MACHINE_NAME = `wmfs_setAndRefresh_1_0`
   const REFRESH_RISK_STATE_MACHINE_NAME = `test_refreshRiskScore_1_0`
@@ -74,6 +75,11 @@ describe('Tests the Ranking State Resource', function () {
           done()
         }
       )
+    })
+
+    it('should refresh all rankings', async () => {
+      const execDesc = await statebox.startExecution({}, REFRESH_ALL_STATE_MACHINE_NAME, {sendResponse: 'COMPLETE'})
+      expect(execDesc.status).to.eql('SUCCEEDED')
     })
 
     it('verify initial data', async () => {
