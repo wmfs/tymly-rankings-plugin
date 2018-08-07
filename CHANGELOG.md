@@ -1,3 +1,43 @@
+## [1.2.2](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.2.1...v1.2.2) (2018-08-07)
+
+
+### 🐛 Bug Fixes
+
+* Ranking failed when mean = 0 ([1562107](https://github.com/wmfs/tymly-rankings-plugin/commit/1562107))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement to 7.0.1 ([301793a](https://github.com/wmfs/tymly-rankings-plugin/commit/301793a))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.14.0 to 1.15.0 ([0755be7](https://github.com/wmfs/tymly-rankings-plugin/commit/0755be7))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement to 1.11.0 ([056787b](https://github.com/wmfs/tymly-rankings-plugin/commit/056787b))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement to 1.12.0 ([ca676ec](https://github.com/wmfs/tymly-rankings-plugin/commit/ca676ec))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement to 1.12.1 ([3012065](https://github.com/wmfs/tymly-rankings-plugin/commit/3012065))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement to 1.13.0 ([277a4c4](https://github.com/wmfs/tymly-rankings-plugin/commit/277a4c4))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement to 1.13.1 ([5a66a50](https://github.com/wmfs/tymly-rankings-plugin/commit/5a66a50))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement to 1.14.0 ([06f9c20](https://github.com/wmfs/tymly-rankings-plugin/commit/06f9c20))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement from 1.21.0 to 1.22.0 ([b1e71db](https://github.com/wmfs/tymly-rankings-plugin/commit/b1e71db))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement to 1.13.0 ([f21a65d](https://github.com/wmfs/tymly-rankings-plugin/commit/f21a65d))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement to 1.14.0 ([98eb7b0](https://github.com/wmfs/tymly-rankings-plugin/commit/98eb7b0))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement to 1.15.0 ([afec626](https://github.com/wmfs/tymly-rankings-plugin/commit/afec626))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement to 1.16.0 ([8b3da90](https://github.com/wmfs/tymly-rankings-plugin/commit/8b3da90))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement to 1.17.0 ([e7c3c6b](https://github.com/wmfs/tymly-rankings-plugin/commit/e7c3c6b))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement to 1.18.0 ([e792263](https://github.com/wmfs/tymly-rankings-plugin/commit/e792263))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement to 1.19.0 ([044d83c](https://github.com/wmfs/tymly-rankings-plugin/commit/044d83c))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement to 1.20.0 ([37ddda7](https://github.com/wmfs/tymly-rankings-plugin/commit/37ddda7))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement to 1.21.0 ([8e0bb04](https://github.com/wmfs/tymly-rankings-plugin/commit/8e0bb04))
+* **deps-dev:** update semantic-release requirement from 15.9.3 to 15.9.5 ([57ce854](https://github.com/wmfs/tymly-rankings-plugin/commit/57ce854))
+* **deps-dev:** update semantic-release requirement to 15.8.1 ([7421154](https://github.com/wmfs/tymly-rankings-plugin/commit/7421154))
+* **deps-dev:** update semantic-release requirement to 15.9.1 ([0c2e35d](https://github.com/wmfs/tymly-rankings-plugin/commit/0c2e35d))
+* **deps-dev:** update semantic-release requirement to 15.9.2 ([956a042](https://github.com/wmfs/tymly-rankings-plugin/commit/956a042))
+* **deps-dev:** update semantic-release requirement to 15.9.3 ([75da43e](https://github.com/wmfs/tymly-rankings-plugin/commit/75da43e))
+
+
+### 🚨 Tests
+
+* Add a single hotel to the test data. This exposes an error in the rankings service whe the sd ([e1cdfbe](https://github.com/wmfs/tymly-rankings-plugin/commit/e1cdfbe))
+* Additional tests to verify stats for hotel (population 1) and shop (population 0) ([841066a](https://github.com/wmfs/tymly-rankings-plugin/commit/841066a))
+
 ## [1.2.1](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.2.0...v1.2.1) (2018-07-17)
 
 
