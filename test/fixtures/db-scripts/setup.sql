@@ -58,6 +58,7 @@ INSERT INTO test.gazetteer (uprn, address_label) VALUES (10, '10 abc lane');
 INSERT INTO test.gazetteer (uprn, address_label) VALUES (11, '11 abc lane');
 INSERT INTO test.gazetteer (uprn, address_label) VALUES (12, '12 abc lane');
 INSERT INTO test.gazetteer (uprn, address_label) VALUES (13, '13 abc lane');
+INSERT INTO test.gazetteer (uprn, address_label) VALUES (14, 'The Big Hoose');
 
 INSERT INTO test.ranking_uprns (uprn, ranking_name) VALUES (1, 'factory');
 INSERT INTO test.ranking_uprns (uprn, ranking_name) VALUES (2, 'factory');
@@ -72,6 +73,7 @@ INSERT INTO test.ranking_uprns (uprn, ranking_name) VALUES (10, 'factory');
 INSERT INTO test.ranking_uprns (uprn, ranking_name) VALUES (11, 'factory');
 INSERT INTO test.ranking_uprns (uprn, ranking_name) VALUES (12, 'factory');
 INSERT INTO test.ranking_uprns (uprn, ranking_name) VALUES (13, 'factory');
+INSERT INTO test.ranking_uprns (uprn, ranking_name) VALUES (14, 'hotel');
 
 INSERT INTO test.food (uprn, rating) VALUES (1, '2');
 INSERT INTO test.food (uprn, rating) VALUES (2, '1');
@@ -86,6 +88,7 @@ INSERT INTO test.food (uprn, rating) VALUES (10, '3');
 INSERT INTO test.food (uprn, rating) VALUES (11, '2');
 INSERT INTO test.food (uprn, rating) VALUES (12, '4');
 INSERT INTO test.food (uprn, rating) VALUES (13, '1');
+INSERT INTO test.food (uprn, rating) VALUES (14, '1');
 
 INSERT INTO test.incidents (uprn, amount) VALUES (1, '77');
 INSERT INTO test.incidents (uprn, amount) VALUES (2, '0');
