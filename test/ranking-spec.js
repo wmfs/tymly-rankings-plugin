@@ -82,9 +82,13 @@ describe('Tests the Ranking State Resource', function () {
       expect(execDesc.status).to.eql('SUCCEEDED')
     })
 
-    it('verify initial data', async () => {
+    it('verify factory data', async () => {
       const viewData = await client.query(`select * from test.factory_scores`)
-      const rankingData = await rankingModel.find({})
+      const rankingData = await rankingModel.find({
+        where: {
+          rankingName: { equals: 'factory' }
+        }
+      })
       const statsData = await statsModel.findById('factory')
       const mergedData = rankingData
         .map((r, i) => {
@@ -230,7 +234,7 @@ describe('Tests the Ranking State Resource', function () {
   })
 
   describe('stats table', () => {
-    it('verify stats table', async () => {
+    it('verify factory stats', async () => {
       const statsData = await statsModel.findById('factory')
 
       expect(statsData.count).to.eql(13)
@@ -238,6 +242,24 @@ describe('Tests the Ranking State Resource', function () {
       expect(+statsData.stdev).to.eql(57.18)
       expect(+statsData.variance).to.eql(3270.07)
       expect(+statsData.median).to.eql(68)
+    })
+    it('verify hotel stats', async () => {
+      const statsData = await statsModel.findById('hotel')
+
+      expect(statsData.count).to.eql(1)
+      expect(+statsData.mean).to.eql(18)
+      expect(+statsData.stdev).to.eql(0)
+      expect(+statsData.variance).to.eql(0)
+      expect(+statsData.median).to.eql(18)
+    })
+    it('verify shop stats', async () => {
+      const statsData = await statsModel.findById('shop')
+
+      expect(statsData.count).to.eql(0)
+      expect(+statsData.mean).to.eql(NaN)
+      expect(+statsData.stdev).to.eql(NaN)
+      expect(+statsData.variance).to.eql(NaN)
+      expect(+statsData.median).to.eql(NaN)
     })
   })
 
