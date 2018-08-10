@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.2.2...v1.3.0) (2018-08-10)
+
+
+### 🛠 Builds
+
+* **deps:** update request requirement from 2.87.0 to 2.88.0 ([c8a833c](https://github.com/wmfs/tymly-rankings-plugin/commit/c8a833c))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.15.0 to 1.15.1 ([bc0d664](https://github.com/wmfs/tymly-rankings-plugin/commit/bc0d664))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.15.1 to 1.15.2 ([d73b5bd](https://github.com/wmfs/tymly-rankings-plugin/commit/d73b5bd))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement from 1.22.0 to 1.23.0 ([98153c2](https://github.com/wmfs/tymly-rankings-plugin/commit/98153c2))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement from 1.23.0 to 1.24.0 ([ff09857](https://github.com/wmfs/tymly-rankings-plugin/commit/ff09857))
+* **deps-dev:** update semantic-release requirement from 15.9.5 to 15.9.6 ([da00e02](https://github.com/wmfs/tymly-rankings-plugin/commit/da00e02))
+
 ## [1.2.2](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.2.1...v1.2.2) (2018-08-07)
 
 
