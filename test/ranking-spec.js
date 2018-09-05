@@ -78,7 +78,7 @@ describe('Tests the Ranking State Resource', function () {
     })
 
     it('should refresh all rankings', async () => {
-      const execDesc = await statebox.startExecution({}, REFRESH_ALL_STATE_MACHINE_NAME, {sendResponse: 'COMPLETE'})
+      const execDesc = await statebox.startExecution({}, REFRESH_ALL_STATE_MACHINE_NAME, { sendResponse: 'COMPLETE' })
       expect(execDesc.status).to.eql('SUCCEEDED')
     })
 
@@ -204,9 +204,9 @@ describe('Tests the Ranking State Resource', function () {
           TestTimestamp = AuditDate().add(rt.days, 'days')
 
           const execDesc = await statebox.startExecution(
-            {schema: 'test', category: 'factory'},
+            { schema: 'test', category: 'factory' },
             REFRESH_STATE_MACHINE_NAME,
-            {sendResponse: 'COMPLETE'}
+            { sendResponse: 'COMPLETE' }
           )
           expect(execDesc.status).to.eql('SUCCEEDED')
         })
@@ -278,7 +278,7 @@ describe('Tests the Ranking State Resource', function () {
           }
         },
         SET_REFRESH_STATE_MACHINE_NAME,
-        {sendResponse: 'COMPLETE'}
+        { sendResponse: 'COMPLETE' }
       )
       expect(execDesc.status).to.eql('SUCCEEDED')
     })
@@ -306,7 +306,7 @@ describe('Tests the Ranking State Resource', function () {
           uprn: 1
         },
         REFRESH_RISK_STATE_MACHINE_NAME,
-        {sendResponse: 'COMPLETE'}
+        { sendResponse: 'COMPLETE' }
       )
       expect(execDesc.status).to.eql('SUCCEEDED')
     })
@@ -315,7 +315,7 @@ describe('Tests the Ranking State Resource', function () {
       const execDesc = await statebox.startExecution(
         {},
         REFRESH_STATE_MACHINE_NAME,
-        {sendResponse: 'COMPLETE'}
+        { sendResponse: 'COMPLETE' }
       )
       expect(execDesc.status).to.eql('SUCCEEDED')
     })
