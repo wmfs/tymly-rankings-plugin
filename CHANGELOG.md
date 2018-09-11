@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.4.0...v1.5.0) (2018-09-11)
+
+
+### 🛠 Builds
+
+* **deps:** update debug requirement from 3.2.1 to 3.2.2 ([9c27c8d](https://github.com/wmfs/tymly-rankings-plugin/commit/9c27c8d))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/hl-pg-client requirement ([5b8bfc3](https://github.com/wmfs/tymly-rankings-plugin/commit/5b8bfc3))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([d4bd5f8](https://github.com/wmfs/tymly-rankings-plugin/commit/d4bd5f8))
+
 # [1.4.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.3.0...v1.4.0) (2018-09-11)
 
 
