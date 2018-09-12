@@ -1,3 +1,13 @@
+# [1.9.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.8.0...v1.9.0) (2018-09-12)
+
+
+### 🛠 Builds
+
+* **deps:** update lodash requirement from 4.17.10 to 4.17.11 ([94fd2e6](https://github.com/wmfs/tymly-rankings-plugin/commit/94fd2e6))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.26.1 to 1.29.0 ([becaeb4](https://github.com/wmfs/tymly-rankings-plugin/commit/becaeb4))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([96ccfee](https://github.com/wmfs/tymly-rankings-plugin/commit/96ccfee))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([bb65030](https://github.com/wmfs/tymly-rankings-plugin/commit/bb65030))
+
 # [1.8.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.7.0...v1.8.0) (2018-09-12)
 
 
