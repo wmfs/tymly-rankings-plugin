@@ -22,7 +22,7 @@
     "boom": "7.2.0",
     "debug": "4.0.1",
     "distributions": "1.1.0",
-    "lodash": "4.17.10",
+    "lodash": "4.17.11",
     "moment": "2.22.2",
     "process": "0.11.10",
     "request": "2.88.0",
