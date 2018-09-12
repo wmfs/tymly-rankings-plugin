@@ -1,3 +1,21 @@
+# [1.8.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.7.0...v1.8.0) (2018-09-12)
+
+
+### 🛠 Builds
+
+* **deps:** update debug requirement from 4.0.0 to 4.0.1 ([a3e14c7](https://github.com/wmfs/tymly-rankings-plugin/commit/a3e14c7))
+* **deps:** update stats-lite requirement from 2.1.1 to 2.2.0 ([fee1161](https://github.com/wmfs/tymly-rankings-plugin/commit/fee1161))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([a1b89a2](https://github.com/wmfs/tymly-rankings-plugin/commit/a1b89a2))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/hl-pg-client requirement ([f6c1247](https://github.com/wmfs/tymly-rankings-plugin/commit/f6c1247))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([fce250f](https://github.com/wmfs/tymly-rankings-plugin/commit/fce250f))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([67e43dc](https://github.com/wmfs/tymly-rankings-plugin/commit/67e43dc))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([b13ab4b](https://github.com/wmfs/tymly-rankings-plugin/commit/b13ab4b))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([417e590](https://github.com/wmfs/tymly-rankings-plugin/commit/417e590))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([cb5968a](https://github.com/wmfs/tymly-rankings-plugin/commit/cb5968a))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([9c1e793](https://github.com/wmfs/tymly-rankings-plugin/commit/9c1e793))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([5d7f31e](https://github.com/wmfs/tymly-rankings-plugin/commit/5d7f31e))
+* **deps-dev:** update semantic-release requirement ([951972d](https://github.com/wmfs/tymly-rankings-plugin/commit/951972d))
+
 # [1.7.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.6.0...v1.7.0) (2018-09-11)
 
 
