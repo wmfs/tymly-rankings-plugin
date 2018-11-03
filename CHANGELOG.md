@@ -1,3 +1,14 @@
+# [1.12.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.11.0...v1.12.0) (2018-11-03)
+
+
+### 🛠 Builds
+
+* **deps:** update boom requirement from 7.2.1 to 7.2.2 ([f3567cd](https://github.com/wmfs/tymly-rankings-plugin/commit/f3567cd))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([c0d2b49](https://github.com/wmfs/tymly-rankings-plugin/commit/c0d2b49))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([c588e33](https://github.com/wmfs/tymly-rankings-plugin/commit/c588e33))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([bc6ca2c](https://github.com/wmfs/tymly-rankings-plugin/commit/bc6ca2c))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([fc38d6d](https://github.com/wmfs/tymly-rankings-plugin/commit/fc38d6d))
+
 # [1.11.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.10.0...v1.11.0) (2018-11-01)
 
 
