@@ -1,0 +1,8 @@
+{
+  "RefreshAll": {
+    "Type": "Task",
+    "Resource": "module:refreshAll",
+    "End": true
+  }
+}
+}
