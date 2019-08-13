@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.13.0...v1.13.1) (2019-08-13)
+
+
+### 🐛 Bug Fixes
+
+* generate view /w snake cased name + update orig risk score when generating stats ([a198976](https://github.com/wmfs/tymly-rankings-plugin/commit/a198976))
+
 # [1.13.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.12.0...v1.13.0) (2019-07-11)
 
 
