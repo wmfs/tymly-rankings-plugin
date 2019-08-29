@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.13.1...v1.14.0) (2019-08-29)
+
+
+### ✨ Features
+
+* amend original risk score ([ac075a9](https://github.com/wmfs/tymly-rankings-plugin/commit/ac075a9))
+
 ## [1.13.1](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.13.0...v1.13.1) (2019-08-13)
 
 
