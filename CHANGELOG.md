@@ -1,3 +1,30 @@
+# [1.15.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.14.0...v1.15.0) (2019-11-12)
+
+
+### ✨ Features
+
+* introduce view for stats and update tests ([](https://github.com/wmfs/tymly-rankings-plugin/commit/71d575d))
+* persist status of the refresh to database model ([](https://github.com/wmfs/tymly-rankings-plugin/commit/8b88627))
+* refactor out stats model for stats view ([](https://github.com/wmfs/tymly-rankings-plugin/commit/c23ac49))
+* remove stats model ([](https://github.com/wmfs/tymly-rankings-plugin/commit/a63b4c1))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dev dependancies ([](https://github.com/wmfs/tymly-rankings-plugin/commit/ead8f4a))
+
+
+### 📦 Code Refactoring
+
+* fail state resource if missing values ([](https://github.com/wmfs/tymly-rankings-plugin/commit/9eb5b7c))
+* lose the callback in generate stats ([](https://github.com/wmfs/tymly-rankings-plugin/commit/9487345))
+* tidy up service ([](https://github.com/wmfs/tymly-rankings-plugin/commit/e06a0e9))
+
+
+### 💎 Styles
+
+* standard fix ([](https://github.com/wmfs/tymly-rankings-plugin/commit/c0b230b))
+
 # [1.14.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.13.1...v1.14.0) (2019-08-29)
 
 
