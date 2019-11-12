@@ -26,7 +26,7 @@ describe('Tests the Ranking State Resource', function () {
 
   const originalScores = []
 
-  let statebox, tymlyService, rankingModel, statsModel
+  let statebox, tymlyService, rankingModel
   const AuditDate = () => moment([2018, 5, 18])
   let TestTimestamp
 
@@ -65,7 +65,6 @@ describe('Tests the Ranking State Resource', function () {
           tymlyService = tymlyServices.tymly
           statebox = tymlyServices.statebox
           rankingModel = tymlyServices.storage.models['test_rankingUprns']
-          statsModel = tymlyServices.storage.models['test_modelStats']
           tymlyServices.timestamp.timeProvider = {
             today () {
               return moment(TestTimestamp)
@@ -89,7 +88,10 @@ describe('Tests the Ranking State Resource', function () {
           rankingName: { equals: 'factory' }
         }
       })
-      const statsData = await statsModel.findById('factory')
+
+      const _statsData = await client.query(`select * from test.model_stats_view where category = 'factory'`)
+      const statsData = _statsData.rows[0]
+
       const mergedData = rankingData
         .map((r, i) => {
           return {
@@ -109,7 +111,7 @@ describe('Tests the Ranking State Resource', function () {
 
       expect(statsData.ranges.veryLow.lowerBound).to.eql(0)
       expect(statsData.ranges.veryHigh.upperBound).to.eql(mergedData[mergedData.length - 1].score)
-      expect(statsData.count).to.eql(13)
+      expect(+statsData.count).to.eql(13)
       expect(+statsData.mean).to.eql(58.23)
       expect(+statsData.stdev).to.eql(31.45)
     })
@@ -233,33 +235,33 @@ describe('Tests the Ranking State Resource', function () {
     }
   })
 
-  describe('stats table', () => {
+  describe('stats view', () => {
     it('verify factory stats', async () => {
-      const statsData = await statsModel.findById('factory')
+      const _statsData = await client.query(`select * from test.model_stats_view where category = 'factory'`)
+      const statsData = _statsData.rows[0]
 
-      expect(statsData.count).to.eql(13)
+      expect(+statsData.count).to.eql(13)
       expect(+statsData.mean).to.eql(68.08)
       expect(+statsData.stdev).to.eql(57.18)
       expect(+statsData.variance).to.eql(3270.07)
-      expect(+statsData.median).to.eql(68)
     })
     it('verify hotel stats', async () => {
-      const statsData = await statsModel.findById('hotel')
+      const _statsData = await client.query(`select * from test.model_stats_view where category = 'hotel'`)
+      const statsData = _statsData.rows[0]
 
-      expect(statsData.count).to.eql(1)
+      expect(+statsData.count).to.eql(1)
       expect(+statsData.mean).to.eql(18)
       expect(+statsData.stdev).to.eql(0)
       expect(+statsData.variance).to.eql(0)
-      expect(+statsData.median).to.eql(18)
     })
     it('verify shop stats', async () => {
-      const statsData = await statsModel.findById('shop')
+      const _statsData = await client.query(`select * from test.model_stats_view where category = 'shop'`)
+      const statsData = _statsData.rows[0]
 
-      expect(statsData.count).to.eql(0)
-      expect(+statsData.mean).to.eql(NaN)
-      expect(+statsData.stdev).to.eql(NaN)
-      expect(+statsData.variance).to.eql(NaN)
-      expect(+statsData.median).to.eql(NaN)
+      expect(+statsData.count).to.eql(0)
+      expect(+statsData.mean).to.eql(0)
+      expect(+statsData.stdev).to.eql(0)
+      expect(+statsData.variance).to.eql(0)
     })
   })
 
