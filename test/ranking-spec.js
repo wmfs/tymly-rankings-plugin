@@ -319,7 +319,10 @@ describe('Tests the Ranking State Resource', function () {
         REFRESH_STATE_MACHINE_NAME,
         { sendResponse: 'COMPLETE' }
       )
-      expect(execDesc.status).to.eql('SUCCEEDED')
+
+      expect(execDesc.status).to.eql('FAILED')
+      expect(execDesc.errorCode).to.eql('noSchemaOrCategory')
+      expect(execDesc.errorMessage).to.eql('No schema or category on input.')
     })
   })
 
