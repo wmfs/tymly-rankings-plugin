@@ -89,7 +89,7 @@ describe('Tests the Ranking State Resource', function () {
         }
       })
 
-      const _statsData = await client.query(`select * from test.model_stats_view where category = 'factory'`)
+      const _statsData = await client.query(`select * from test.ranking_uprns_stats where category = 'factory'`)
       const statsData = _statsData.rows[0]
 
       const mergedData = rankingData
@@ -237,7 +237,7 @@ describe('Tests the Ranking State Resource', function () {
 
   describe('stats view', () => {
     it('verify factory stats', async () => {
-      const _statsData = await client.query(`select * from test.model_stats_view where category = 'factory'`)
+      const _statsData = await client.query(`select * from test.ranking_uprns_stats where category = 'factory'`)
       const statsData = _statsData.rows[0]
 
       expect(+statsData.count).to.eql(13)
@@ -246,7 +246,7 @@ describe('Tests the Ranking State Resource', function () {
       expect(+statsData.variance).to.eql(3270.07)
     })
     it('verify hotel stats', async () => {
-      const _statsData = await client.query(`select * from test.model_stats_view where category = 'hotel'`)
+      const _statsData = await client.query(`select * from test.ranking_uprns_stats where category = 'hotel'`)
       const statsData = _statsData.rows[0]
 
       expect(+statsData.count).to.eql(1)
@@ -255,7 +255,7 @@ describe('Tests the Ranking State Resource', function () {
       expect(+statsData.variance).to.eql(0)
     })
     it('verify shop stats', async () => {
-      const _statsData = await client.query(`select * from test.model_stats_view where category = 'shop'`)
+      const _statsData = await client.query(`select * from test.ranking_uprns_stats where category = 'shop'`)
       const statsData = _statsData.rows[0]
 
       expect(+statsData.count).to.eql(0)

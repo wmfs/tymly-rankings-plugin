@@ -2,7 +2,6 @@
   "label": "Shop ranking",
   "description": "Maps where to find the data and weightings for each factor",
   "rankingModel": "rankingUprns",
-  "statsModel": "modelStats",
   "source": {
     "model": "gazetteer",
     "property": "uprn",
