@@ -26,7 +26,7 @@ describe('Tests the Ranking State Resource', function () {
 
   const originalScores = []
 
-  let statebox, tymlyService, rankingModel
+  let statebox, tymlyService, rankingModel, refreshModel
   const AuditDate = () => moment([2018, 5, 18])
   let TestTimestamp
 
@@ -65,6 +65,7 @@ describe('Tests the Ranking State Resource', function () {
           tymlyService = tymlyServices.tymly
           statebox = tymlyServices.statebox
           rankingModel = tymlyServices.storage.models['test_rankingUprns']
+          refreshModel = tymlyServices.storage.models['wmfs_rankingRefreshStatus']
           tymlyServices.timestamp.timeProvider = {
             today () {
               return moment(TestTimestamp)
@@ -211,6 +212,10 @@ describe('Tests the Ranking State Resource', function () {
             { sendResponse: 'COMPLETE' }
           )
           expect(execDesc.status).to.eql('SUCCEEDED')
+        })
+        it(`check ranking refresh status model`, async () => {
+          const refreshRecords = await refreshModel.find({ where: { key: { equals: `test_factory` } } })
+          expect(refreshRecords[0].status).to.eql('ENDED')
         })
         it(`verify calculated risk score on day ${rt.days}`, async () => {
           const a = await rankingModel.findById(originalScores[0].uprn)

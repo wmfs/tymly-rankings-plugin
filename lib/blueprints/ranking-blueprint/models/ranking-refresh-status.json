@@ -1,0 +1,15 @@
+{
+  "title": "Refresh Status",
+  "description": "Tracks which ranking models have started/ended",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Key of the ranking model being refreshed"
+    },
+    "status": {
+      "type": "string",
+      "description": "Status of the refresh e.g. STARTED / ENDED"
+    }
+  }
+}
