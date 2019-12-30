@@ -1,0 +1,11 @@
+{
+  "name": "rankings",
+  "version": "1.15.0",
+  "label": "Rankings",
+  "author": "Liliana Judge",
+  "organisation": "West Midlands Fire Service",
+  "description": "Tymly plugin to handle ranking of data",
+  "categories": [
+    "ranking"
+  ]
+}
