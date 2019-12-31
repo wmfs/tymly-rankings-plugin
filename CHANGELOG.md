@@ -1,3 +1,16 @@
+# [1.16.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.15.0...v1.16.0) (2019-12-31)
+
+
+### 🛠 Builds
+
+* **deps:** update lodash requirement from 4.17.14 to 4.17.15 ([f762022](https://github.com/wmfs/tymly-rankings-plugin/commit/f762022d6bc9ce844923af769157e974c12075d0))
+* **deps-dev:** bump packages ([aa9b3ac](https://github.com/wmfs/tymly-rankings-plugin/commit/aa9b3ac7f8f74a209f4199cc13f5728bcbb47607))
+
+
+### ♻️ Chores
+
+* add plugin.json ([161ced6](https://github.com/wmfs/tymly-rankings-plugin/commit/161ced609d3dc6069b1394fd070bf9c52f455d63))
+
 # [1.15.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.14.0...v1.15.0) (2019-11-12)
 
 
