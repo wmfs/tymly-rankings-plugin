@@ -19,10 +19,10 @@ process.on('unhandledRejection', (reason, p) => {
 describe('Tests the Ranking State Resource', function () {
   this.timeout(15000)
 
-  const REFRESH_ALL_STATE_MACHINE_NAME = `wmfs_refreshAll_1_0`
-  const REFRESH_STATE_MACHINE_NAME = `test_refreshRanking_1_0`
-  const SET_REFRESH_STATE_MACHINE_NAME = `wmfs_setAndRefresh_1_0`
-  const REFRESH_RISK_STATE_MACHINE_NAME = `test_refreshRiskScore_1_0`
+  const REFRESH_ALL_STATE_MACHINE_NAME = 'wmfs_refreshAll_1_0'
+  const REFRESH_STATE_MACHINE_NAME = 'test_refreshRanking_1_0'
+  const SET_REFRESH_STATE_MACHINE_NAME = 'wmfs_setAndRefresh_1_0'
+  const REFRESH_RISK_STATE_MACHINE_NAME = 'test_refreshRiskScore_1_0'
 
   const originalScores = []
 
@@ -64,8 +64,8 @@ describe('Tests the Ranking State Resource', function () {
           expect(err).to.eql(null)
           tymlyService = tymlyServices.tymly
           statebox = tymlyServices.statebox
-          rankingModel = tymlyServices.storage.models['test_rankingUprns']
-          refreshModel = tymlyServices.storage.models['wmfs_rankingRefreshStatus']
+          rankingModel = tymlyServices.storage.models.test_rankingUprns
+          refreshModel = tymlyServices.storage.models.wmfs_rankingRefreshStatus
           tymlyServices.timestamp.timeProvider = {
             today () {
               return moment(TestTimestamp)
@@ -83,14 +83,14 @@ describe('Tests the Ranking State Resource', function () {
     })
 
     it('verify factory data', async () => {
-      const viewData = await client.query(`select * from test.factory_scores`)
+      const viewData = await client.query('select * from test.factory_scores')
       const rankingData = await rankingModel.find({
         where: {
           rankingName: { equals: 'factory' }
         }
       })
 
-      const _statsData = await client.query(`select * from test.ranking_uprns_stats where category = 'factory'`)
+      const _statsData = await client.query('select * from test.ranking_uprns_stats where category = \'factory\'')
       const statsData = _statsData.rows[0]
 
       const mergedData = rankingData
@@ -213,8 +213,8 @@ describe('Tests the Ranking State Resource', function () {
           )
           expect(execDesc.status).to.eql('SUCCEEDED')
         })
-        it(`check ranking refresh status model`, async () => {
-          const refreshRecords = await refreshModel.find({ where: { key: { equals: `test_factory` } } })
+        it('check ranking refresh status model', async () => {
+          const refreshRecords = await refreshModel.find({ where: { key: { equals: 'test_factory' } } })
           expect(refreshRecords[0].status).to.eql('ENDED')
         })
         it(`verify calculated risk score on day ${rt.days}`, async () => {
@@ -225,7 +225,7 @@ describe('Tests the Ranking State Resource', function () {
           expect(+b.updatedRiskScore).to.eql(rt.b_score)
         })
 
-        it(`verify projected dates`, async () => {
+        it('verify projected dates', async () => {
           const a = await rankingModel.findById(originalScores[0].uprn)
           const b = await rankingModel.findById(originalScores[1].uprn)
 
@@ -242,7 +242,7 @@ describe('Tests the Ranking State Resource', function () {
 
   describe('stats view', () => {
     it('verify factory stats', async () => {
-      const _statsData = await client.query(`select * from test.ranking_uprns_stats where category = 'factory'`)
+      const _statsData = await client.query('select * from test.ranking_uprns_stats where category = \'factory\'')
       const statsData = _statsData.rows[0]
 
       expect(+statsData.count).to.eql(13)
@@ -251,7 +251,7 @@ describe('Tests the Ranking State Resource', function () {
       expect(+statsData.variance).to.eql(3270.07)
     })
     it('verify hotel stats', async () => {
-      const _statsData = await client.query(`select * from test.ranking_uprns_stats where category = 'hotel'`)
+      const _statsData = await client.query('select * from test.ranking_uprns_stats where category = \'hotel\'')
       const statsData = _statsData.rows[0]
 
       expect(+statsData.count).to.eql(1)
@@ -260,7 +260,7 @@ describe('Tests the Ranking State Resource', function () {
       expect(+statsData.variance).to.eql(0)
     })
     it('verify shop stats', async () => {
-      const _statsData = await client.query(`select * from test.ranking_uprns_stats where category = 'shop'`)
+      const _statsData = await client.query('select * from test.ranking_uprns_stats where category = \'shop\'')
       const statsData = _statsData.rows[0]
 
       expect(+statsData.count).to.eql(0)
