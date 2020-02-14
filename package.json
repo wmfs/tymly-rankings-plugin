@@ -41,7 +41,7 @@
     "@semantic-release/exec": "3.3.8",
     "@wmfs/hl-pg-client": "1.17.0",
     "@wmfs/tymly": "1.119.0",
-    "@wmfs/tymly-pg-plugin": "1.170.0"
+    "@wmfs/tymly-pg-plugin": "1.171.0"
   },
   "scripts": {
     "lint": "standard",
