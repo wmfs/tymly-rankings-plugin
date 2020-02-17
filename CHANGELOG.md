@@ -1,3 +1,54 @@
+# [1.19.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.18.0...v1.19.0) (2020-02-17)
+
+
+### 🛠 Builds
+
+* **deps:** bump request from 2.88.0 to 2.88.2 ([e73f1c7](https://github.com/wmfs/tymly-rankings-plugin/commit/e73f1c7c18d0e60723aab8b8bf390e9803f56c4a))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/changelog from 3.0.6 to 5.0.0 ([fdf6509](https://github.com/wmfs/tymly-rankings-plugin/commit/fdf6509f7b536b0ebdcecff93660570034d79839))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/git from 7.0.18 to 9.0.0 ([d41cdbf](https://github.com/wmfs/tymly-rankings-plugin/commit/d41cdbf87313c36a6fcfe03518914ee7eda2a01f))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.14.0 to 1.15.0 ([09039af](https://github.com/wmfs/tymly-rankings-plugin/commit/09039af0ff925e3268abdb01d9da634df08a2d5a))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.15.0 to 1.16.0 ([808908e](https://github.com/wmfs/tymly-rankings-plugin/commit/808908e1029352bcd865a30c2f680f3af5a69275))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.16.0 to 1.17.0 ([b998b6f](https://github.com/wmfs/tymly-rankings-plugin/commit/b998b6f02962e9c21a89564378c2ca461b320bbb))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.113.0 to 1.114.0 ([3e19731](https://github.com/wmfs/tymly-rankings-plugin/commit/3e19731428b1e147a353eb88e0ca2b880e61d199))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.114.0 to 1.115.0 ([93faa8e](https://github.com/wmfs/tymly-rankings-plugin/commit/93faa8e020d2b0890f291dc2ad3b1bffd907b686))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.115.0 to 1.116.0 ([f6fa803](https://github.com/wmfs/tymly-rankings-plugin/commit/f6fa803ad7ceb2fffb439b3fff9a8d02ca99d2fc))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.116.0 to 1.117.0 ([f1c76c6](https://github.com/wmfs/tymly-rankings-plugin/commit/f1c76c67aeaab6e101171bb50e2557e022cf4f43))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.117.0 to 1.118.0 ([aa17524](https://github.com/wmfs/tymly-rankings-plugin/commit/aa17524740561d221c2387d03dc42e08bebe73e5))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.118.0 to 1.119.0 ([d42d4d1](https://github.com/wmfs/tymly-rankings-plugin/commit/d42d4d1c5054798a24e3bde7c13c5100fe139ad7))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.119.0 to 1.120.0 ([dba0999](https://github.com/wmfs/tymly-rankings-plugin/commit/dba09995e32e0c3b48ef9ef2205218900725437b))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.153.0 to 1.154.0 ([6cd4e1a](https://github.com/wmfs/tymly-rankings-plugin/commit/6cd4e1a1275d961c8ac6009647421f22351971dc))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.154.0 to 1.155.0 ([badb0e1](https://github.com/wmfs/tymly-rankings-plugin/commit/badb0e1ca067a176f0d6af8b9ec3c91ed8c8f109))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.155.0 to 1.156.0 ([7893e3c](https://github.com/wmfs/tymly-rankings-plugin/commit/7893e3c377013c7ca8d48f29d1ce4218c72962bd))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.156.0 to 1.158.0 ([ba18b11](https://github.com/wmfs/tymly-rankings-plugin/commit/ba18b117bdf31511b73febd9fe2e89904a4ced46))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.158.0 to 1.159.0 ([a2b8f26](https://github.com/wmfs/tymly-rankings-plugin/commit/a2b8f26f05cfdf2b43caa2d490a6204f49421cee))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.159.0 to 1.160.0 ([18d45e5](https://github.com/wmfs/tymly-rankings-plugin/commit/18d45e52bf5401b8455f54cc76c0453d475269f7))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.160.0 to 1.161.0 ([079e6fc](https://github.com/wmfs/tymly-rankings-plugin/commit/079e6fc6a956bd3ce8baee734c793864cf626b44))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.161.0 to 1.162.0 ([bb992bc](https://github.com/wmfs/tymly-rankings-plugin/commit/bb992bc5bb25828dc2b130327077de5644c2efdd))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.162.0 to 1.164.0 ([5999926](https://github.com/wmfs/tymly-rankings-plugin/commit/59999260ae41d1c8099bc05346177bd2fd2d6a73))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.164.0 to 1.165.0 ([7600778](https://github.com/wmfs/tymly-rankings-plugin/commit/7600778ce301ad03e211b03d40a7bcf82834bc9c))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.165.0 to 1.167.0 ([5b226ab](https://github.com/wmfs/tymly-rankings-plugin/commit/5b226aba81c71e322162286933d126f501fd925b))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.167.0 to 1.168.0 ([7f26f94](https://github.com/wmfs/tymly-rankings-plugin/commit/7f26f947201671982aa997cd39b6bf679953b988))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.168.0 to 1.169.0 ([31e1360](https://github.com/wmfs/tymly-rankings-plugin/commit/31e1360419eacde2f9b3fc03d829159b4394e95e))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.169.0 to 1.170.0 ([267aaab](https://github.com/wmfs/tymly-rankings-plugin/commit/267aaab7b0cfe231f72f806748ae87a36812f669))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.170.0 to 1.171.0 ([84ddd57](https://github.com/wmfs/tymly-rankings-plugin/commit/84ddd5796b083e78873093399794b213075fe575))
+* **deps-dev:** bump codecov from 3.6.2 to 3.6.3 ([a66b98b](https://github.com/wmfs/tymly-rankings-plugin/commit/a66b98b53a113c24516f071fc792333bae58dd67))
+* **deps-dev:** bump codecov from 3.6.3 to 3.6.4 ([71bd419](https://github.com/wmfs/tymly-rankings-plugin/commit/71bd419c035f733f62381fe4481395c0337e917c))
+* **deps-dev:** bump codecov from 3.6.4 to 3.6.5 ([a821dd0](https://github.com/wmfs/tymly-rankings-plugin/commit/a821dd090979fc7ab248beb85a5770bbcb28647c))
+* **deps-dev:** bump cz-conventional-changelog from 3.0.2 to 3.1.0 ([481af79](https://github.com/wmfs/tymly-rankings-plugin/commit/481af79e1a7270074b92ca885b4e35ecb919dbcc))
+* **deps-dev:** bump semantic-release from 15.14.0 to 17.0.4 ([fe521a3](https://github.com/wmfs/tymly-rankings-plugin/commit/fe521a33d22cd410529c7a264284dd45ad97caa7))
+* **deps-dev:** update standard requirement from 12.0.1 to 14.3.1 ([fc45570](https://github.com/wmfs/tymly-rankings-plugin/commit/fc45570b22d8cd491b9e9f8292e599243bc8c7ee))
+
+
+### ♻️ Chores
+
+* **version:** plugin 1.19.0 [skip ci] ([27cda3f](https://github.com/wmfs/tymly-rankings-plugin/commit/27cda3f76f750340c84b0fe80ccf3aaf6e6caf77))
+
+
+### 💎 Styles
+
+* Do not access Object.prototype method 'hasOwnProperty' from target object ([85390ea](https://github.com/wmfs/tymly-rankings-plugin/commit/85390eaee39780f7fa21aa75c2ed83182f7d4ff4))
+* standard --fix ([09db796](https://github.com/wmfs/tymly-rankings-plugin/commit/09db796ba3c0063a8f6fc008d21f52b85a5e4e74))
+
 # [1.18.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.17.0...v1.18.0) (2020-01-27)
 
 
