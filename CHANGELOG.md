@@ -1,3 +1,15 @@
+# [1.20.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.19.0...v1.20.0) (2020-02-24)
+
+
+### ✨ Features
+
+* expose rankings on service [ch78] [ch79] ([97495bc](https://github.com/wmfs/tymly-rankings-plugin/commit/97495bc3327da07a01a43fa5ccd82d828f04ef91))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/exec from 3.3.8 to 5.0.0 ([f99295f](https://github.com/wmfs/tymly-rankings-plugin/commit/f99295fdeccd37330afca88e0efb40e546009bbf))
+
 # [1.19.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.18.0...v1.19.0) (2020-02-17)
 
 
