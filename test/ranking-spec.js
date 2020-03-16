@@ -26,7 +26,7 @@ describe('Tests the Ranking State Resource', function () {
 
   const originalScores = []
 
-  let statebox, tymlyService, rankingModel, refreshModel
+  let statebox, tymlyService, rankingService, rankingModel, refreshModel
   const AuditDate = () => moment([2018, 5, 18])
   let TestTimestamp
 
@@ -63,6 +63,7 @@ describe('Tests the Ranking State Resource', function () {
         (err, tymlyServices) => {
           expect(err).to.eql(null)
           tymlyService = tymlyServices.tymly
+          rankingService = tymlyServices.rankings
           statebox = tymlyServices.statebox
           rankingModel = tymlyServices.storage.models.test_rankingUprns
           refreshModel = tymlyServices.storage.models.wmfs_rankingRefreshStatus
@@ -115,6 +116,22 @@ describe('Tests the Ranking State Resource', function () {
       expect(+statsData.count).to.eql(13)
       expect(+statsData.mean).to.eql(58.23)
       expect(+statsData.stdev).to.eql(31.45)
+    })
+
+    it('test the service function to find range', async () => {
+      const viewRes = await client.query(`select * from test.factory_scores;`)
+      const { original_risk_score: originalRiskScore, updated_risk_score: updatedRiskScore } = viewRes.rows[0]
+      const score = updatedRiskScore || originalRiskScore
+      const range = await rankingService.findRange('test.ranking_uprns_stats', 'factory', score)
+      expect(range).to.eql('veryHigh')
+    })
+
+    it('test the service function to find distribution', async () => {
+      const viewRes = await client.query(`select * from test.factory_scores;`)
+      const { original_risk_score: originalRiskScore, updated_risk_score: updatedRiskScore } = viewRes.rows[0]
+      const score = updatedRiskScore || originalRiskScore
+      const dist = await rankingService.findDistribution('test.ranking_uprns_stats', 'factory', score)
+      expect(dist).to.eql(0.0016)
     })
   })
 
