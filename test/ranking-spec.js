@@ -119,7 +119,7 @@ describe('Tests the Ranking State Resource', function () {
     })
 
     it('test the service function to find range', async () => {
-      const viewRes = await client.query(`select * from test.factory_scores;`)
+      const viewRes = await client.query('select * from test.factory_scores;')
       const { original_risk_score: originalRiskScore, updated_risk_score: updatedRiskScore } = viewRes.rows[0]
       const score = updatedRiskScore || originalRiskScore
       const range = await rankingService.findRange('test.ranking_uprns_stats', 'factory', score)
@@ -127,7 +127,7 @@ describe('Tests the Ranking State Resource', function () {
     })
 
     it('test the service function to find distribution', async () => {
-      const viewRes = await client.query(`select * from test.factory_scores;`)
+      const viewRes = await client.query('select * from test.factory_scores;')
       const { original_risk_score: originalRiskScore, updated_risk_score: updatedRiskScore } = viewRes.rows[0]
       const score = updatedRiskScore || originalRiskScore
       const dist = await rankingService.findDistribution('test.ranking_uprns_stats', 'factory', score)
