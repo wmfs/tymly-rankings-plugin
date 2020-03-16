@@ -1,3 +1,10 @@
+## [1.21.1](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.21.0...v1.21.1) (2020-03-16)
+
+
+### 🐛 Bug Fixes
+
+* add checks to get stats functions ([585ed7f](https://github.com/wmfs/tymly-rankings-plugin/commit/585ed7f62e1666a605e87be745f528f31c0c0005))
+
 # [1.21.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.20.0...v1.21.0) (2020-03-16)
 
 
