@@ -19,13 +19,11 @@
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "boom": "7.3.0",
     "debug": "4.1.1",
     "distributions": "2.1.0",
     "lodash": "4.17.15",
     "moment": "2.24.0",
-    "process": "0.11.10",
-    "request": "2.88.2"
+    "process": "0.11.10"
   },
   "devDependencies": {
     "chai": "4.2.0",
