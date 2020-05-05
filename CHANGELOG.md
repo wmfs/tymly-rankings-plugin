@@ -1,3 +1,26 @@
+## [1.21.3](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.21.2...v1.21.3) (2020-05-05)
+
+
+### 🐛 Bug Fixes
+
+* **rankings-service:** Remove redundant boto callback parameter ([e181f26](https://github.com/wmfs/tymly-rankings-plugin/commit/e181f269f4ed7324c6acbe83b8b1c966e0469258))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.135.1 to 1.135.2 ([7d4cb14](https://github.com/wmfs/tymly-rankings-plugin/commit/7d4cb1405ace1b36ee7f99ac5cb7a0c99b3201d8))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.135.2 to 1.136.0 ([054de9c](https://github.com/wmfs/tymly-rankings-plugin/commit/054de9cec6ebc0588d2d7aad6b462b40dd2a42e6))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.136.0 to 1.137.0 ([a529b50](https://github.com/wmfs/tymly-rankings-plugin/commit/a529b50fab0a266aa40e9df7dcf45e63c6530de3))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.137.0 to 1.137.1 ([9deba12](https://github.com/wmfs/tymly-rankings-plugin/commit/9deba12e4480c3bdf091ac95ee36c1a136447bb5))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.137.1 to 1.137.2 ([7b954bc](https://github.com/wmfs/tymly-rankings-plugin/commit/7b954bc4f7044b5c21bdc4f6b2e90241c175d99e))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.195.0 to 1.195.1 ([00bc5f0](https://github.com/wmfs/tymly-rankings-plugin/commit/00bc5f0def4a63a61462833c08cd2c25180e0ac2))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.195.1 to 1.195.2 ([33c7445](https://github.com/wmfs/tymly-rankings-plugin/commit/33c7445dcaa753b0ba6ab2c03090046fb56400fc))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.195.2 to 1.195.3 ([1b1e11a](https://github.com/wmfs/tymly-rankings-plugin/commit/1b1e11a01448c91f91dbaf21be03cd0ee80a339c))
+* **deps-dev:** bump cz-conventional-changelog from 3.1.0 to 3.2.0 ([829e0f3](https://github.com/wmfs/tymly-rankings-plugin/commit/829e0f3b068a292e68f5205b2e3070d7cfbec3d2))
+* **deps-dev:** bump mocha from 7.1.1 to 7.1.2 ([f82fdb8](https://github.com/wmfs/tymly-rankings-plugin/commit/f82fdb8371602018dd88c392fa218f7bc7dcf24a))
+* **deps-dev:** bump semantic-release from 17.0.6 to 17.0.7 ([33e48d3](https://github.com/wmfs/tymly-rankings-plugin/commit/33e48d38e38644b1a2aa83d8c6adf20e8e31349f))
+* **dev:** Removed unused boom and request dependencies ([d8c0c13](https://github.com/wmfs/tymly-rankings-plugin/commit/d8c0c1307542e62113efb85b61e4f66f219de20d))
+
 ## [1.21.2](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.21.1...v1.21.2) (2020-04-20)
 
 
