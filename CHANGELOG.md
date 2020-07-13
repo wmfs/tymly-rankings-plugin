@@ -1,3 +1,12 @@
+# [1.24.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.23.0...v1.24.0) (2020-07-13)
+
+
+### 🛠 Builds
+
+* **deps:** bump lodash from 4.17.15 to 4.17.19 ([cdceb42](https://github.com/wmfs/tymly-rankings-plugin/commit/cdceb4287f3b0f65f282724c8bb46c76ee91b09e))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.145.0 to 1.146.0 ([a3b7165](https://github.com/wmfs/tymly-rankings-plugin/commit/a3b716542ae8949d4ad596b487d80bd291908d69))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.146.0 to 1.147.0 ([41b33e2](https://github.com/wmfs/tymly-rankings-plugin/commit/41b33e2463b0f2909ffdbdb952d4eaa313046327))
+
 # [1.23.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.22.0...v1.23.0) (2020-07-01)
 
 
