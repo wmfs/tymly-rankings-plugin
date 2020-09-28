@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.26.0...v1.27.0) (2020-09-28)
+
+
+### 🛠 Builds
+
+* **deps:** bump debug from 4.1.1 to 4.2.0 ([b3881f1](https://github.com/wmfs/tymly-rankings-plugin/commit/b3881f1140a2bdcda4152dc184306e04741f8a32))
+
 # [1.26.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.25.0...v1.26.0) (2020-09-28)
 
 
