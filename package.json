@@ -19,7 +19,7 @@
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "debug": "4.2.0",
+    "debug": "4.3.0",
     "distributions": "2.1.0",
     "lodash": "4.17.20",
     "moment": "2.29.1",
