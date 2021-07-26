@@ -1,0 +1,34 @@
+{
+  "Comment": "View Risk Model",
+  "name": "View Risk Model",
+  "version": "1.0",
+  "categories": [
+    "protection"
+  ],
+  "StartAt": "GetRiskModelData",
+  "States": {
+    "GetRiskModelData": {
+      "Type": "Task",
+      "Resource": "function:wmfs_getRiskModelData",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "wmfs_viewRiskModel",
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

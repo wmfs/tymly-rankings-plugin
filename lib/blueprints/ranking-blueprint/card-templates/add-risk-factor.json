@@ -1,0 +1,40 @@
+{
+  "templateMeta": {
+    "name": "add-risk-factor",
+    "title": "Add Risk Factor",
+    "category": "protection"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "color": "accent",
+      "spacing": "large",
+      "items": [
+        {
+          "type": "xTextBlock",
+          "text": "{{ data }}",
+          "size": "large"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "large",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "{{ data }}"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Close"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

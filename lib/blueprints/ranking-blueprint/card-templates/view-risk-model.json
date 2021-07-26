@@ -1,0 +1,58 @@
+{
+  "templateMeta": {
+    "name": "view-risk-model",
+    "title": "View Risk Model",
+    "category": "protection"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "color": "accent",
+      "spacing": "large",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "{{ data.label }}",
+          "size": "large"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "large",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Factors",
+          "size": "medium",
+          "weight": "bolder"
+        },
+        {
+          "type": "List",
+          "arrayPath": "data.factors",
+          "showLaunches": true,
+          "templates": {
+            "label": "{{ item.factor }}"
+          }
+        },
+        {
+          "type": "Action.PushCard",
+          "title": "Add Factor",
+          "stateMachineName": "wmfs_addRiskFactor_1_0",
+          "input": {
+            "riskModelKey": "$.riskModelKey"
+          }
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Close"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

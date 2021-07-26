@@ -1,0 +1,34 @@
+{
+  "Comment": "View Risk Factor",
+  "name": "View Risk Factor",
+  "version": "1.0",
+  "categories": [
+    "protection"
+  ],
+  "StartAt": "GetRiskModelFactor",
+  "States": {
+    "GetRiskModelFactor": {
+      "Type": "Task",
+      "Resource": "function:wmfs_getRiskModelFactor",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "wmfs_viewRiskFactor",
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

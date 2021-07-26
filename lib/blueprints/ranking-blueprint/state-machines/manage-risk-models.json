@@ -1,0 +1,39 @@
+{
+  "Comment": "Manage Risk Models",
+  "name": "Manage Risk Models",
+  "version": "1.0",
+  "categories": [
+    "protection"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "instigatorGroup": "app",
+  "StartAt": "GetAllRiskModelData",
+  "States": {
+    "GetAllRiskModelData": {
+      "Type": "Task",
+      "Resource": "function:wmfs_getAllRiskModelData",
+      "ResultPath": "$.riskModels",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "wmfs_manageRiskModels",
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
