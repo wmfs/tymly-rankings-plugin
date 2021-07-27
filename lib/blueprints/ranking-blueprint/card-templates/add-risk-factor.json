@@ -12,8 +12,8 @@
       "spacing": "large",
       "items": [
         {
-          "type": "xTextBlock",
-          "text": "{{ data }}",
+          "type": "TextBlock",
+          "text": "Add Risk Factor",
           "size": "large"
         }
       ]
@@ -23,8 +23,64 @@
       "spacing": "large",
       "items": [
         {
-          "type": "TextBlock",
-          "text": "{{ data }}"
+          "id": "key",
+          "title": "Key",
+          "type": "Input.Text",
+          "validation": {
+            "required": true
+          }
+        },
+        {
+          "showWhen": "data.factors.map(r => r.factor).includes(data.key)",
+          "type": "Container",
+          "color": "warning",
+          "spacing": "none",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Factor already exists with the key: '{{ data.key }}'"
+            }
+          ]
+        },
+        {
+          "id": "factorLabel",
+          "title": "Label",
+          "type": "Input.Text"
+        },
+        {
+          "id": "type",
+          "title": "Type",
+          "type": "Input.ChoiceSet",
+          "style": "expanded",
+          "value": "options",
+          "choices": [
+            {
+              "title": "Options",
+              "value": "options"
+            },
+            {
+              "title": "Constant",
+              "value": "constant"
+            }
+          ]
+        },
+        {
+          "showWhen": "data.type === 'constant'",
+          "id": "constant",
+          "title": "Constant value",
+          "type": "Input.Number",
+          "validation": {
+            "requiredIf": "data.type === 'constant'"
+          }
+        },
+        {
+          "showWhen": "data.type === 'options'",
+          "id": "defaultValue",
+          "title": "Default value",
+          "type": "Input.Number",
+          "validation": {
+            "requiredIf": "data.type === 'options'"
+          }
         }
       ]
     }
@@ -33,6 +89,11 @@
     {
       "type": "Action.Cancel",
       "title": "Close"
+    },
+    {
+      "showWhen": "!data.factors.map(r => r.factor).includes(data.key)",
+      "type": "Action.Submit",
+      "title": "Submit"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",

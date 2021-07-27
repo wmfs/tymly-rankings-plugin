@@ -5,8 +5,13 @@
   "categories": [
     "protection"
   ],
-  "StartAt": "AwaitingHumanInput",
+  "StartAt": "GetRiskModelData",
   "States": {
+    "GetRiskModelData": {
+      "Type": "Task",
+      "Resource": "function:wmfs_getRiskModelData",
+      "Next": "AwaitingHumanInput"
+    },
     "AwaitingHumanInput": {
       "Type": "Task",
       "Resource": "module:awaitingHumanInput",
@@ -15,6 +20,11 @@
         "uiName": "wmfs_addRiskFactor",
         "dataPath": "$"
       },
+      "Next": "AddFactor"
+    },
+    "AddFactor": {
+      "Type": "Task",
+      "Resource": "function:wmfs_addRiskFactor",
       "End": true
     }
   },
