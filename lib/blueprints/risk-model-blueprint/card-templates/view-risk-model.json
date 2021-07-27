@@ -31,17 +31,9 @@
         {
           "type": "List",
           "arrayPath": "data.factors",
-          "showLaunches": true,
+          "clickToLaunch": true,
           "templates": {
             "label": "{{ item.factor }}"
-          }
-        },
-        {
-          "type": "Action.PushCard",
-          "title": "Add Factor",
-          "stateMachineName": "riskModel_addRiskFactor_1_0",
-          "input": {
-            "riskModelKey": "$.riskModelKey"
           }
         }
       ]
@@ -51,6 +43,14 @@
     {
       "type": "Action.Cancel",
       "title": "Close"
+    },
+    {
+      "type": "Action.PushCard",
+      "title": "Add Factor",
+      "stateMachineName": "riskModel_addRiskFactor_1_0",
+      "input": {
+        "riskModelKey": "$.riskModelKey"
+      }
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",

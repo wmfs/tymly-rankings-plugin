@@ -1,0 +1,80 @@
+{
+  "templateMeta": {
+    "name": "edit-risk-factor",
+    "title": "Edit Risk Factor",
+    "category": "riskModel"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "color": "accent",
+      "spacing": "large",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Edit Risk Factor: {{ data.factor }}",
+          "size": "large"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "large",
+      "items": [
+        {
+          "id": "factorLabel",
+          "title": "Label",
+          "type": "Input.Text"
+        },
+        {
+          "id": "type",
+          "title": "Type",
+          "type": "Input.ChoiceSet",
+          "style": "expanded",
+          "value": "options",
+          "choices": [
+            {
+              "title": "Options",
+              "value": "options"
+            },
+            {
+              "title": "Constant",
+              "value": "constant"
+            }
+          ]
+        },
+        {
+          "showWhen": "data.type === 'constant'",
+          "id": "constant",
+          "title": "Constant value",
+          "type": "Input.Number",
+          "validation": {
+            "requiredIf": "data.type === 'constant'"
+          }
+        },
+        {
+          "showWhen": "data.type === 'options'",
+          "id": "defaultValue",
+          "title": "Default value",
+          "type": "Input.Number",
+          "validation": {
+            "requiredIf": "data.type === 'options'"
+          }
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Close"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

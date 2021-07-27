@@ -23,8 +23,54 @@
       "spacing": "large",
       "items": [
         {
-          "type": "TextBlock",
-          "text": "{{ data }}"
+          "type": "FactSet",
+          "facts": [
+            {
+              "title": "Model",
+              "value": "{{ data.model }}"
+            },
+            {
+              "title": "Factor",
+              "value": "{{ data.factor }}"
+            },
+            {
+              "title": "Data location",
+              "value": "{{ data.rankings.namespace }}.{{ data.rankings.model }}.{{ data.rankings.property }}"
+            },
+            {
+              "title": "Type",
+              "value": "{{ data.registry.type }}"
+            },
+            {
+              "showWhen": "data.registry.type === 'constant'",
+              "title": "Constant",
+              "value": "{{ data.registry.score }}"
+            },
+            {
+              "showWhen": "data.registry.type === 'options'",
+              "title": "Default",
+              "value": "{{ data.registry.default }}"
+            }
+          ]
+        },
+        {
+          "showWhen": "data.registry.type === 'options'",
+          "type": "MarkupTable",
+          "arrayPath": "data.registry.options",
+          "columns": [
+            {
+              "title": "Type",
+              "value": "{{ item.type }}"
+            },
+            {
+              "title": "Criteria",
+              "value": "{{ item.readableCriteria }}"
+            },
+            {
+              "title": "Score",
+              "value": "{{ item.score }}"
+            }
+          ]
         }
       ]
     }
@@ -33,6 +79,15 @@
     {
       "type": "Action.Cancel",
       "title": "Close"
+    },
+    {
+      "type": "Action.PushCard",
+      "title": "Edit",
+      "stateMachineName": "riskModel_editRiskFactor_1_0",
+      "input": {
+        "model": "$.model",
+        "factor": "$.factor"
+      }
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",

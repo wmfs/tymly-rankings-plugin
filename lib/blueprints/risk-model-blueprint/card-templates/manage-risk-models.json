@@ -25,7 +25,7 @@
         {
           "type": "List",
           "arrayPath": "data.riskModels",
-          "showLaunches": true,
+          "clickToLaunch": true,
           "templates": {
             "label": "{{ item.label }}"
           }

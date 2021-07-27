@@ -1,0 +1,44 @@
+{
+  "Comment": "Add Risk Factor",
+  "name": "Add Risk Factor",
+  "version": "1.0",
+  "categories": [
+    "riskModel"
+  ],
+  "StartAt": "GetRiskModelFactor",
+  "States": {
+    "GetRiskModelFactor": {
+      "Type": "Task",
+      "Resource": "function:riskModel_getRiskModelFactor",
+      "Next": "ShapeRiskFactorPreEdit"
+    },
+    "ShapeRiskFactorPreEdit": {
+      "Type": "Task",
+      "Resource": "function:riskModel_shapeRiskFactorPreEdit",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "riskModel_editRiskFactor",
+        "dataPath": "$"
+      },
+      "Next": "AddFactor"
+    },
+    "EditFactor": {
+      "Type": "Task",
+      "Resource": "function:riskModel_editRiskFactor",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
