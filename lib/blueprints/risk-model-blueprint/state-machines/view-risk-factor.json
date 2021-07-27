@@ -1,20 +1,15 @@
 {
-  "Comment": "Manage Risk Models",
-  "name": "Manage Risk Models",
+  "Comment": "View Risk Factor",
+  "name": "View Risk Factor",
   "version": "1.0",
   "categories": [
-    "protection"
+    "riskModel"
   ],
-  "instigators": [
-    "user"
-  ],
-  "instigatorGroup": "app",
-  "StartAt": "GetAllRiskModelData",
+  "StartAt": "GetRiskModelFactor",
   "States": {
-    "GetAllRiskModelData": {
+    "GetRiskModelFactor": {
       "Type": "Task",
-      "Resource": "function:wmfs_getAllRiskModelData",
-      "ResultPath": "$.riskModels",
+      "Resource": "function:riskModel_getRiskModelFactor",
       "Next": "AwaitingHumanInput"
     },
     "AwaitingHumanInput": {
@@ -22,7 +17,7 @@
       "Resource": "module:awaitingHumanInput",
       "ResourceConfig": {
         "uiType": "form",
-        "uiName": "wmfs_manageRiskModels",
+        "uiName": "riskModel_viewRiskFactor",
         "dataPath": "$"
       },
       "End": true

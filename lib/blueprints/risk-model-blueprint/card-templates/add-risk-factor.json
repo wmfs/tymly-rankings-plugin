@@ -2,7 +2,7 @@
   "templateMeta": {
     "name": "add-risk-factor",
     "title": "Add Risk Factor",
-    "category": "protection"
+    "category": "riskModel"
   },
   "type": "AdaptiveCard",
   "body": [

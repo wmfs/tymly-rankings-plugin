@@ -1,0 +1,8 @@
+{
+  "label": "Risk Models",
+  "description": "Risk Models",
+  "styling": {
+    "icon": "riskModels",
+    "backgroundColor": "#008800"
+  }
+}

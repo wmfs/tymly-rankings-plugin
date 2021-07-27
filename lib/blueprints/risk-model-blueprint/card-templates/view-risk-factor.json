@@ -1,8 +1,8 @@
 {
   "templateMeta": {
-    "name": "manage-risk-models",
-    "title": "Manage Risk Models",
-    "category": "protection"
+    "name": "view-risk-factor",
+    "title": "View Risk Factor",
+    "category": "riskModel"
   },
   "type": "AdaptiveCard",
   "body": [
@@ -13,7 +13,7 @@
       "items": [
         {
           "type": "TextBlock",
-          "text": "Risk Models",
+          "text": "{{ data.model }} - {{ data.factor }}",
           "size": "large"
         }
       ]
@@ -23,12 +23,8 @@
       "spacing": "large",
       "items": [
         {
-          "type": "List",
-          "arrayPath": "data.riskModels",
-          "showLaunches": true,
-          "templates": {
-            "label": "{{ item.label }}"
-          }
+          "type": "TextBlock",
+          "text": "{{ data }}"
         }
       ]
     }

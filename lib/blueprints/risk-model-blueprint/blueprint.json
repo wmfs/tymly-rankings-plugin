@@ -1,0 +1,10 @@
+{
+  "namespace": "riskModel",
+  "name": "model-blueprint",
+  "version": "1.0",
+  "label": "model-blueprint",
+  "author": "WMFS",
+  "organisation": "West Midlands Fire Service",
+  "description": "Tymly blueprint to manage risk models",
+  "categories": []
+}

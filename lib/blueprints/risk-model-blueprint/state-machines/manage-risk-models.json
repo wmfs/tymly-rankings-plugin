@@ -1,15 +1,20 @@
 {
-  "Comment": "Add Risk Factor",
-  "name": "Add Risk Factor",
+  "Comment": "Manage Risk Models",
+  "name": "Manage Risk Models",
   "version": "1.0",
   "categories": [
-    "protection"
+    "riskModel"
   ],
-  "StartAt": "GetRiskModelData",
+  "instigators": [
+    "user"
+  ],
+  "instigatorGroup": "app",
+  "StartAt": "GetAllRiskModelData",
   "States": {
-    "GetRiskModelData": {
+    "GetAllRiskModelData": {
       "Type": "Task",
-      "Resource": "function:wmfs_getRiskModelData",
+      "Resource": "function:riskModel_getAllRiskModelData",
+      "ResultPath": "$.riskModels",
       "Next": "AwaitingHumanInput"
     },
     "AwaitingHumanInput": {
@@ -17,14 +22,9 @@
       "Resource": "module:awaitingHumanInput",
       "ResourceConfig": {
         "uiType": "form",
-        "uiName": "wmfs_addRiskFactor",
+        "uiName": "riskModel_manageRiskModels",
         "dataPath": "$"
       },
-      "Next": "AddFactor"
-    },
-    "AddFactor": {
-      "Type": "Task",
-      "Resource": "function:wmfs_addRiskFactor",
       "End": true
     }
   },

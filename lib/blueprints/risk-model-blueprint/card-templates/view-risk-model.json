@@ -2,7 +2,7 @@
   "templateMeta": {
     "name": "view-risk-model",
     "title": "View Risk Model",
-    "category": "protection"
+    "category": "riskModel"
   },
   "type": "AdaptiveCard",
   "body": [
@@ -39,7 +39,7 @@
         {
           "type": "Action.PushCard",
           "title": "Add Factor",
-          "stateMachineName": "wmfs_addRiskFactor_1_0",
+          "stateMachineName": "riskModel_addRiskFactor_1_0",
           "input": {
             "riskModelKey": "$.riskModelKey"
           }
