@@ -52,7 +52,8 @@ describe('Tests the Ranking State Resource', function () {
         {
           pluginPaths: [
             path.resolve(__dirname, './..'),
-            require.resolve('@wmfs/tymly-pg-plugin')
+            require.resolve('@wmfs/tymly-pg-plugin'),
+            require.resolve('@wmfs/tymly-test-helpers/plugins/mock-users-plugin')
           ],
           blueprintPaths: [
             path.resolve(__dirname, './fixtures/blueprint'),
