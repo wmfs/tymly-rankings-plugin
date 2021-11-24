@@ -1,0 +1,25 @@
+{
+  "Comment": "Search Ranking Refresh",
+  "name": "Search Ranking Refresh",
+  "Version": "1.0",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "StartAt": "Search",
+  "States": {
+    "Search": {
+      "Type": "Task",
+      "Resource": "function:wmfs_rankingRefreshSearch",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "system_system",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
