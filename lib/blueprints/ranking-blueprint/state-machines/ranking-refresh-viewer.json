@@ -10,13 +10,20 @@
     "user"
   ],
   "instigatorGroup": "app",
-  "StartAt": "AwaitingHumanInput",
+  "StartAt": "GetStats",
   "States": {
+    "GetStats": {
+      "Type": "Task",
+      "Resource": "function:wmfs_rankingRefreshGetStats",
+      "ResultPath": "$",
+      "Next": "AwaitingHumanInput"
+    },
     "AwaitingHumanInput": {
       "Type": "Task",
       "Resource": "module:awaitingHumanInput",
       "ResourceConfig": {
-        "uiName": "wmfs_rankingRefreshViewer"
+        "uiName": "wmfs_rankingRefreshViewer",
+        "dataPath": "$"
       },
       "End": true
     }

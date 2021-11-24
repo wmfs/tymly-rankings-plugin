@@ -20,6 +20,51 @@
       "spacing": "none",
       "items": [
         {
+          "type": "FactSet",
+          "facts": [
+            {
+              "title": "Average duration overall",
+              "value": "{{ data.avgDurationOverall }}"
+            }
+          ]
+        },
+        {
+          "type": "MarkupTable",
+          "title": "Average duration per FSEC",
+          "arrayPath": "data.avgDurationPerCategory",
+          "columns": [
+            {
+              "title": "FSEC",
+              "value": "{{ item.key }}"
+            },
+            {
+              "title": "Average",
+              "value": "{{ item.avg }}"
+            }
+          ]
+        },
+        {
+          "type": "MarkupTable",
+          "title": "Average duration per day (last 15 days)",
+          "arrayPath": "data.avgDurationPerDay",
+          "columns": [
+            {
+              "title": "Date",
+              "value": "{{ formatDate(item.date, 'DD MMM YYYY') }}"
+            },
+            {
+              "title": "Average",
+              "value": "{{ item.avg }}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "none",
+      "items": [
+        {
           "id": "key",
           "type": "Input.ChoiceSet",
           "title": "FSEC",
