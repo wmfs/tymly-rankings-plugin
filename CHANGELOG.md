@@ -1,3 +1,10 @@
+## [1.32.1](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.32.0...v1.32.1) (2021-11-25)
+
+
+### 🐛 Bug Fixes
+
+* simplify by using model search ([a334d80](https://github.com/wmfs/tymly-rankings-plugin/commit/a334d80d4db588787b8431069afa8a1883771c55))
+
 # [1.32.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.31.0...v1.32.0) (2021-11-25)
 
 
