@@ -1,0 +1,39 @@
+{
+  "Comment": "View Ranking Refresh Updates",
+  "name": "View Ranking Refresh Updates",
+  "Version": "1.0",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "instigatorGroup": "app",
+  "StartAt": "GetStats",
+  "States": {
+    "GetStats": {
+      "Type": "Task",
+      "Resource": "function:wmfs_rankingRefreshGetStats",
+      "ResultPath": "$",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiName": "wmfs_rankingRefreshViewer",
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "system_system",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

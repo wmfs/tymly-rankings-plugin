@@ -1,0 +1,216 @@
+{
+  "templateMeta": {
+    "name": "ranking-refresh-viewer",
+    "title": "View Ranking Refresh Updates",
+    "category": "system"
+  },
+  "hooks": {
+    "afterLeave": {
+      "actions": [
+        {
+          "type": "Action.StoreData"
+        }
+      ]
+    }
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "spacing": "none",
+      "items": [
+        {
+          "type": "FactSet",
+          "facts": [
+            {
+              "title": "Average duration overall",
+              "value": "{{ data.avgDurationOverall }}"
+            }
+          ]
+        },
+        {
+          "type": "MarkupTable",
+          "title": "Average duration per FSEC",
+          "arrayPath": "data.avgDurationPerCategory",
+          "columns": [
+            {
+              "title": "FSEC",
+              "value": "{{ item.key }}"
+            },
+            {
+              "title": "Average",
+              "value": "{{ item.avg }}"
+            }
+          ]
+        },
+        {
+          "type": "MarkupTable",
+          "title": "Average duration per day (last 15 days)",
+          "arrayPath": "data.avgDurationPerDay",
+          "columns": [
+            {
+              "title": "Date",
+              "value": "{{ formatDate(item.date, 'DD MMM YYYY') }}"
+            },
+            {
+              "title": "Average",
+              "value": "{{ item.avg }}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "none",
+      "items": [
+        {
+          "id": "key",
+          "type": "Input.ChoiceSet",
+          "title": "FSEC",
+          "clearable": true,
+          "choices": [
+            {
+              "title": "Care Home",
+              "value": "wmfs_careHome"
+            },
+            {
+              "title": "Converted Flat",
+              "value": "wmfs_convertedFlat"
+            },
+            {
+              "title": "Factory",
+              "value": "wmfs_factory"
+            },
+            {
+              "title": "Flat",
+              "value": "wmfs_flat"
+            },
+            {
+              "title": "Further Education",
+              "value": "wmfs_furtherEducation"
+            },
+            {
+              "title": "Hmo",
+              "value": "wmfs_hmo"
+            },
+            {
+              "title": "Hospital",
+              "value": "wmfs_hospital"
+            },
+            {
+              "title": "Hostel",
+              "value": "wmfs_hostel"
+            },
+            {
+              "title": "Hotel",
+              "value": "wmfs_hotel"
+            },
+            {
+              "title": "Licensed Premise",
+              "value": "wmfs_licensedPremise"
+            },
+            {
+              "title": "Office",
+              "value": "wmfs_office"
+            },
+            {
+              "title": "Other Sleeping",
+              "value": "wmfs_otherSleeping"
+            },
+            {
+              "title": "Other Workplace",
+              "value": "wmfs_otherWorkplace"
+            },
+            {
+              "title": "Public Building",
+              "value": "wmfs_publicBuilding"
+            },
+            {
+              "title": "Public Building Other",
+              "value": "wmfs_publicBuildingOther"
+            },
+            {
+              "title": "School",
+              "value": "wmfs_school"
+            },
+            {
+              "title": "Shop",
+              "value": "wmfs_shop"
+            }
+          ]
+        },
+        {
+          "type": "Container",
+          "spacing": "none",
+          "justifyContent": true,
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{{ data.totalHits || 0 }} result{{ data.totalHits === 1 ? '' : 's' }}"
+            },
+            {
+              "type": "Action.ApiLookup",
+              "title": "Search",
+              "stateMachineName": "wmfs_rankingRefreshSearch_1_0",
+              "input": {
+                "page": "$.page",
+                "key": "$.key"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "none",
+      "showWhen": "data.results && data.results.length",
+      "items": [
+        {
+          "id": "resultsList",
+          "type": "List",
+          "arrayPath": "data.results",
+          "templates": {
+            "badge": [
+              {
+                "showWhen": "item.status === 'STARTED'",
+                "text": "{{ item.status }}",
+                "colour": "warning"
+              },
+              {
+                "showWhen": "item.status === 'ENDED'",
+                "text": "{{ item.status }}",
+                "colour": "good"
+              },
+              {
+                "showWhen": "!['STARTED', 'ENDED'].includes(item.status)",
+                "text": "{{ item.status }}",
+                "colour": "standard"
+              }
+            ],
+            "label": "{{ item.key }}",
+            "sublabel": [
+              "{{ item.status === 'ENDED' ? `Duration: ${item.duration}` : 'Did not finish' }}",
+              "Last modified at {{ formatDate(item.modified, 'DD MMM YYYY HH:mm') }}"
+            ]
+          }
+        },
+        {
+          "type": "Pagination",
+          "page": "data.page",
+          "totalPages": "data.totalPages",
+          "endpoint": {
+            "stateMachineName": "wmfs_rankingRefreshSearch_1_0",
+            "input": {
+              "page": "$.page",
+              "key": "$.key"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
