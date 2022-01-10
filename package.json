@@ -40,7 +40,7 @@
     "@wmfs/hl-pg-client": "1.28.0",
     "@wmfs/tymly": "1.224.2",
     "@wmfs/tymly-pg-plugin": "1.258.0",
-    "@wmfs/tymly-test-helpers": "1.11.0"
+    "@wmfs/tymly-test-helpers": "1.13.0"
   },
   "scripts": {
     "lint": "standard",
