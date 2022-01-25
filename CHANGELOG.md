@@ -1,3 +1,24 @@
+# [1.33.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.32.1...v1.33.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/exec to v6.0.3 ([ccaaa25](https://github.com/wmfs/tymly-rankings-plugin/commit/ccaaa253d419a01df0f6a572384000a6103a85ff))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.222.0 ([dd090e9](https://github.com/wmfs/tymly-rankings-plugin/commit/dd090e99f18ea7bfed1143293a94d86e91fa09ec))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.224.2 ([00b70fa](https://github.com/wmfs/tymly-rankings-plugin/commit/00b70fa7eb94d5a4d685e2ea2ac14931cf09bfe8))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-pg-plugin to v1.257.0 ([ed21b25](https://github.com/wmfs/tymly-rankings-plugin/commit/ed21b25c466bd6fed52dd1d7b68b0baa05383555))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-pg-plugin to v1.258.0 ([18c9be3](https://github.com/wmfs/tymly-rankings-plugin/commit/18c9be3bdb5c17eeb105f7b77add13be058a98b4))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.13.0 ([fa70824](https://github.com/wmfs/tymly-rankings-plugin/commit/fa7082412e943d88f906511fae2268c20cfa8f57))
+* **deps-dev:** update dependency mocha to v9.1.4 ([7bdd18c](https://github.com/wmfs/tymly-rankings-plugin/commit/7bdd18c68559e9c3974de4fabcdbfb179f6a64f6))
+* **deps-dev:** update dependency mocha to v9.2.0 ([61e0b96](https://github.com/wmfs/tymly-rankings-plugin/commit/61e0b968ee5af5e547eba84ef95828e9b739fccd))
+* **deps-dev:** update dependency semantic-release to v19 ([fd246d5](https://github.com/wmfs/tymly-rankings-plugin/commit/fd246d57ac52abad09786b7d35aa147f3c9b781d))
+* **deps:** update dependency debug to v4.3.3 ([33ca86a](https://github.com/wmfs/tymly-rankings-plugin/commit/33ca86a02336b296812add6233f630742f9080d3))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** CircleCI update next gen PostgreSQL image [sc-11442] ([9312048](https://github.com/wmfs/tymly-rankings-plugin/commit/93120487b5f806a0901bebcd775b0950e06aed18))
+
 ## [1.32.1](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.32.0...v1.32.1) (2021-11-25)
 
 
