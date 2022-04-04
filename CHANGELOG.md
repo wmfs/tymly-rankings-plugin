@@ -1,3 +1,24 @@
+# [1.34.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.33.0...v1.34.0) (2022-04-04)
+
+
+### ✨ Features
+
+* use tymly logger instead of debug ([b694835](https://github.com/wmfs/tymly-rankings-plugin/commit/b694835ab892df6e0fd5ccf82b3a85ea8da09879))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/hl-pg-client to v1.29.0 ([d8e1bb9](https://github.com/wmfs/tymly-rankings-plugin/commit/d8e1bb9c305c9fec38b2f7e467d887bf6ca8f122))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.14.0 ([37d2975](https://github.com/wmfs/tymly-rankings-plugin/commit/37d2975b57c1c79f42f3924e71afb0a7da37b40d))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.15.0 ([51d76c2](https://github.com/wmfs/tymly-rankings-plugin/commit/51d76c222acc3c3a0f860d19a1dd44c9865fec6d))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.16.0 ([592d48b](https://github.com/wmfs/tymly-rankings-plugin/commit/592d48bb92d775190ac7ef7392834e7a176db925))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.17.0 ([e2c2f91](https://github.com/wmfs/tymly-rankings-plugin/commit/e2c2f912db6d602e2d70ec1f14e98e3fdc8b44d5))
+* **deps-dev:** update dependency chai to v4.3.5 ([b9f230a](https://github.com/wmfs/tymly-rankings-plugin/commit/b9f230a471622b762b06f9e63fe64b543430be9f))
+* **deps-dev:** update dependency chai to v4.3.6 ([0be2bcf](https://github.com/wmfs/tymly-rankings-plugin/commit/0be2bcf180e87da94baada9a8f2944effae67fd3))
+* **deps-dev:** update dependency mocha to v9.2.1 ([3a8065d](https://github.com/wmfs/tymly-rankings-plugin/commit/3a8065dfab8ddf93b3dc2427c53d807f266ec65f))
+* **deps-dev:** update dependency mocha to v9.2.2 ([86b0af5](https://github.com/wmfs/tymly-rankings-plugin/commit/86b0af58627e1a8358fdbba497762cfc8a9edde0))
+* **deps:** update deps ([b11ab9f](https://github.com/wmfs/tymly-rankings-plugin/commit/b11ab9fa254dfb288b3f784bbd41f2cb82753f59))
+
 # [1.33.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.32.1...v1.33.0) (2022-01-25)
 
 
