@@ -4,15 +4,6 @@
     "title": "View Ranking Refresh Updates",
     "category": "system"
   },
-  "hooks": {
-    "afterLeave": {
-      "actions": [
-        {
-          "type": "Action.StoreData"
-        }
-      ]
-    }
-  },
   "type": "AdaptiveCard",
   "body": [
     {
@@ -211,6 +202,15 @@
       ]
     }
   ],
-  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "hooks": {
+    "afterLeave": {
+      "actions": [
+        {
+          "type": "Action.StoreData"
+        }
+      ]
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/wmfs/cardscript-schema/master/lib/schema.json",
   "version": "1.0"
 }
