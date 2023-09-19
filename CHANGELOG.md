@@ -1,3 +1,31 @@
+# [1.37.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.36.0...v1.37.0) (2023-09-19)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.258.0 ([c6be9b0](https://github.com/wmfs/tymly-rankings-plugin/commit/c6be9b03832344a37537dd4e38868bd33203c1ba))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.261.0 ([f54cbb0](https://github.com/wmfs/tymly-rankings-plugin/commit/f54cbb0bf13072c69bdd93578f4ffc1cd8f86f4c))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-pg-plugin to v1.284.0 ([36e2a73](https://github.com/wmfs/tymly-rankings-plugin/commit/36e2a7306c1e04911cfd49e8cd94c059704d135e))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-pg-plugin to v1.286.0 ([db5da45](https://github.com/wmfs/tymly-rankings-plugin/commit/db5da45d8f1b9d4e85b07d68c5731f919f37cf03))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-pg-plugin to v1.288.0 ([032272f](https://github.com/wmfs/tymly-rankings-plugin/commit/032272f296c3bb35abc7b9f4310b4ab2f26679e7))
+* **deps-dev:** update dependency chai to v4.3.8 ([6c8aed2](https://github.com/wmfs/tymly-rankings-plugin/commit/6c8aed249f80b12c66aad10af411a10b981bade4))
+* **deps-dev:** update dependency semantic-release to v21.0.3 ([38c6b3d](https://github.com/wmfs/tymly-rankings-plugin/commit/38c6b3dce01782d022daca46656b51707063e020))
+* **deps-dev:** update dependency semantic-release to v21.0.5 ([6af87f4](https://github.com/wmfs/tymly-rankings-plugin/commit/6af87f4f2142ed56e6dc080be40411aff5f2aacd))
+* **deps-dev:** update dependency semantic-release to v21.0.6 ([f91afb7](https://github.com/wmfs/tymly-rankings-plugin/commit/f91afb776b5341279a61f7d1e9058f95963152e9))
+* **deps-dev:** update dependency semantic-release to v21.0.7 ([1844d8d](https://github.com/wmfs/tymly-rankings-plugin/commit/1844d8de0c4c5230ea85e30a94bcc0354227975d))
+* **deps-dev:** update dependency semantic-release to v21.0.9 ([cfe20a1](https://github.com/wmfs/tymly-rankings-plugin/commit/cfe20a12ac18799e0bb59a086a7205943584aeea))
+* **deps-dev:** update dependency semantic-release to v21.1.0 ([4298ec1](https://github.com/wmfs/tymly-rankings-plugin/commit/4298ec133cf395fadcef280c4f371f3feeacb677))
+* **deps-dev:** update dependency semantic-release to v21.1.1 ([d3e3f67](https://github.com/wmfs/tymly-rankings-plugin/commit/d3e3f6747c55b71a32711bddd83814163596f2cb))
+* **deps-dev:** update dependency semantic-release to v21.1.2 ([ea890a4](https://github.com/wmfs/tymly-rankings-plugin/commit/ea890a49678b3df2a0540945905906a679c40d35))
+* **deps-dev:** update dependency semantic-release to v22 ([4820847](https://github.com/wmfs/tymly-rankings-plugin/commit/482084714b68d4d5078f48d4e26acb3acb0ee113))
+* **deps-dev:** update dependency standard to v17.1.0 ([53bec86](https://github.com/wmfs/tymly-rankings-plugin/commit/53bec863235078e328fd360c71f306578460020e))
+* **deps:** revert semantic-release ([412d511](https://github.com/wmfs/tymly-rankings-plugin/commit/412d511001c00ff0eee752525b7601f3c945f6c0))
+
+
+### 📦 Code Refactoring
+
+* standard code styling ([0f23bce](https://github.com/wmfs/tymly-rankings-plugin/commit/0f23bce0bb598e8992245fcf0b8276b0670d5951))
+
 # [1.36.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.35.0...v1.36.0) (2023-06-01)
 
 
