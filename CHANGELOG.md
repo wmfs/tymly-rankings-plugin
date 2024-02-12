@@ -1,3 +1,10 @@
+# [1.38.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.37.0...v1.38.0) (2024-02-12)
+
+
+### Bug Fixes
+
+* update release notes generator preset ([2e3c8a9](https://github.com/wmfs/tymly-rankings-plugin/commit/2e3c8a92c822e7fb5cc02b46679a39cbab9cfed0))
+
 # [1.37.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.36.0...v1.37.0) (2023-09-19)
 
 
