@@ -26,7 +26,7 @@ describe('Tests the Ranking State Resource', function () {
 
   const originalScores = []
 
-  let statebox, tymlyService, rankingService, rankingModel, refreshModel
+  let statebox, tymlyService, rankingService, rankingModel, riskScoreTrailModel, refreshModel
   const AuditDate = () => moment([2018, 5, 18])
   let TestTimestamp
 
@@ -67,6 +67,7 @@ describe('Tests the Ranking State Resource', function () {
           rankingService = tymlyServices.rankings
           statebox = tymlyServices.statebox
           rankingModel = tymlyServices.storage.models.test_rankingUprns
+          riskScoreTrailModel = tymlyServices.storage.models.test_riskScoreTrail
           refreshModel = tymlyServices.storage.models.wmfs_rankingRefreshStatus
           tymlyServices.timestamp.timeProvider = {
             today () {
@@ -82,6 +83,28 @@ describe('Tests the Ranking State Resource', function () {
     it('should refresh all rankings', async () => {
       const execDesc = await statebox.startExecution({}, REFRESH_ALL_STATE_MACHINE_NAME, { sendResponse: 'COMPLETE' })
       expect(execDesc.status).to.eql('SUCCEEDED')
+    })
+
+    it('should check risk score trail model is empty', async () => {
+      const trail = await riskScoreTrailModel.find({})
+      expect(trail.length).to.eql(0)
+    })
+
+    it('should record a risk score trail for a property being adopted', async () => {
+      const ranking = await rankingModel.findOne({ orderBy: ['created'] })
+      await riskScoreTrailModel.create({ ...ranking, eventName: 'ADOPTED' })
+    })
+
+    it('should refresh all rankings again', async () => {
+      const execDesc = await statebox.startExecution({}, REFRESH_ALL_STATE_MACHINE_NAME, { sendResponse: 'COMPLETE' })
+      expect(execDesc.status).to.eql('SUCCEEDED')
+    })
+
+    it('should check risk score trail model has been recorded after refresh', async () => {
+      const trail = await riskScoreTrailModel.find({ orderBy: ['created'] })
+      expect(trail.length).to.eql(2)
+      expect(trail[0].eventName).to.eql('ADOPTED')
+      expect(trail[1].eventName).to.eql('REFRESHED')
     })
 
     it('verify factory data', async () => {

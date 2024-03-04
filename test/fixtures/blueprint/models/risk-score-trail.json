@@ -1,0 +1,65 @@
+{
+  "title": "Risk Score Trail",
+  "description": "History of risk score at different events",
+  "type": "object",
+  "properties": {
+    "uprn": {
+      "type": "integer",
+      "maxLength": 12,
+      "description": "The UPRN of the property"
+    },
+    "rankingName": {
+      "type": "string",
+      "description": "A property type descriptor"
+    },
+    "range": {
+      "type": "string",
+      "description": "The range this property falls within"
+    },
+    "distribution": {
+      "type": "number",
+      "description": "The distribution this property falls within"
+    },
+    "lastAuditDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastEnforcementAction": {
+      "type": "string"
+    },
+    "fsManagement": {
+      "type": "string",
+      "description": "Fire safety level"
+    },
+    "growthCurve": {
+      "type": "number"
+    },
+    "updatedRiskScore": {
+      "type": "number",
+      "description": "An updated risk score calculated using growth curve"
+    },
+    "originalRiskScore": {
+      "type": "number",
+      "description": "The original risk score calculated by the sum of the factors"
+    },
+    "projectedHighRiskCrossover": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "projectedReturnToOriginal": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "eventName": {
+      "type": "string",
+      "description": "Which event was this recorded created at",
+      "enum": [
+        "ADOPTED",
+        "UNADOPTED",
+        "NEW_AUDIT_COMPLETED",
+        "OLD_AUDIT_COMPLETED",
+        "REFRESHED"
+      ]
+    }
+  }
+}
