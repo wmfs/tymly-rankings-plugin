@@ -1,3 +1,10 @@
+# [1.39.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.38.0...v1.39.0) (2024-03-04)
+
+
+### Features
+
+* **(pin 262) crr dd:** [sc-23710] Record risk score after nightly refresh after adopting/completing audit ([#857](https://github.com/wmfs/tymly-rankings-plugin/issues/857)) ([e9becf5](https://github.com/wmfs/tymly-rankings-plugin/commit/e9becf541052b2f79f8705f091369233724adfbd))
+
 # [1.38.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.37.0...v1.38.0) (2024-02-12)
 
 
