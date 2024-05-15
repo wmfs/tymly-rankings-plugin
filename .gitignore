@@ -23,6 +23,7 @@
 # Logs and databases #
 ######################
 *.log
+
 *.sqlite
 
 ## Node ###
@@ -84,9 +85,6 @@ jspm_packages
 # Webstorm
 .idea
 
-# VS Code
-.vscode
-
 # Eclipse:
 
 .project
@@ -104,6 +102,7 @@ local.properties
 
 
 scratch.txt
+package-lock.json
 
 output/
 
@@ -178,5 +177,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-package-lock.json
