@@ -23,7 +23,6 @@
 # Logs and databases #
 ######################
 *.log
-
 *.sqlite
 
 ## Node ###
@@ -84,6 +83,9 @@ jspm_packages
 
 # Webstorm
 .idea
+
+# VS Code
+.vscode
 
 # Eclipse:
 
