@@ -104,6 +104,7 @@ local.properties
 
 
 scratch.txt
+package-lock.json
 
 output/
 
@@ -178,5 +179,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-package-lock.json
