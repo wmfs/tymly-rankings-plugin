@@ -3,6 +3,7 @@
   "description": "Maps where to find the data and weightings for each factor",
   "rankingModel": "rankingUprns",
   "riskScoreTrailModel": "riskScoreTrail",
+  "normalise": true,
   "source": {
     "model": "gazetteer",
     "property": "uprn",
