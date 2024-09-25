@@ -1,3 +1,10 @@
+# [1.40.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.39.0...v1.40.0) (2024-09-25)
+
+
+### Features
+
+* **(pin 262) crr dd:** [sc-23400] Keep filters after Task assigned [#885](https://github.com/wmfs/tymly-rankings-plugin/issues/885) ([ceb58e1](https://github.com/wmfs/tymly-rankings-plugin/commit/ceb58e13a0bc2cfa5e55bddbcca8545acdc0d560))
+
 # [1.39.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.38.0...v1.39.0) (2024-03-04)
 
 
