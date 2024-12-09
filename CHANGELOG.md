@@ -1,3 +1,5 @@
+# [1.43.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.42.0...v1.43.0) (2024-12-09)
+
 # [1.42.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.41.0...v1.42.0) (2024-11-04)
 
 # [1.41.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.40.0...v1.41.0) (2024-11-04)
