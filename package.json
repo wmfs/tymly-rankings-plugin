@@ -40,7 +40,7 @@
     "@semantic-release/exec": "7.0.3",
     "@wmfs/hl-pg-client": "1.41.0",
     "@wmfs/tymly": "1.308.0",
-    "@wmfs/tymly-pg-plugin": "1.323.0",
+    "@wmfs/tymly-pg-plugin": "1.327.0",
     "@wmfs/tymly-test-helpers": "1.24.0"
   },
   "scripts": {
