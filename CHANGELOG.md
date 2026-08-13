@@ -1,3 +1,5 @@
+## [1.46.1](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.46.0...v1.46.1) (2026-08-13)
+
 ## [1.46.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.45.0...v1.46.0) (2025-10-21)
 
 ### Build system dependencies :hammer:
