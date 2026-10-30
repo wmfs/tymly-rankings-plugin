@@ -1,3 +1,27 @@
+## [1.47.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.46.1...v1.47.0) (2026-10-30)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** fix conventionalcommit versions [sc-34125] ([3fa465c](https://github.com/wmfs/tymly-rankings-plugin/commit/3fa465cfa6bb92388f031695f9b51e710940bebe))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs) packages ([#1056](https://github.com/wmfs/tymly-rankings-plugin/issues/1056)) ([f3f28c7](https://github.com/wmfs/tymly-rankings-plugin/commit/f3f28c7dc28a09df451256357e80315731ea0943))
+* **deps-dev:** update dependency @wmfs/hl-pg-client to v1.46.1 ([#1040](https://github.com/wmfs/tymly-rankings-plugin/issues/1040)) ([b827ec9](https://github.com/wmfs/tymly-rankings-plugin/commit/b827ec9a5cc506351b19ed236924435a230993d3))
+* **deps-dev:** update dependency @wmfs/tymly to v1.317.1 ([#1041](https://github.com/wmfs/tymly-rankings-plugin/issues/1041)) ([0e4e048](https://github.com/wmfs/tymly-rankings-plugin/commit/0e4e048fb732707010f05b12a9e9f4f89161010f))
+* **deps-dev:** update dependency @wmfs/tymly-pg-plugin to v1.348.1 ([#1042](https://github.com/wmfs/tymly-rankings-plugin/issues/1042)) ([16790f1](https://github.com/wmfs/tymly-rankings-plugin/commit/16790f1949f571766d9e92f74382c84945bf7912))
+* **deps-dev:** update dependency @wmfs/tymly-test-helpers to v1.24.1 ([#1043](https://github.com/wmfs/tymly-rankings-plugin/issues/1043)) ([0b928d1](https://github.com/wmfs/tymly-rankings-plugin/commit/0b928d1743831c9b147222d4a149b9fcdb31d735))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.0 ([#1044](https://github.com/wmfs/tymly-rankings-plugin/issues/1044)) ([f5deefd](https://github.com/wmfs/tymly-rankings-plugin/commit/f5deefd59bd2d0bee9617c3177977db03deee7b9))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.1 ([#1051](https://github.com/wmfs/tymly-rankings-plugin/issues/1051)) ([680cec7](https://github.com/wmfs/tymly-rankings-plugin/commit/680cec7dbc7faec58f18616df00a2b7e3f6e7fff))
+* **deps-dev:** update dependency mocha to v12 ([#1045](https://github.com/wmfs/tymly-rankings-plugin/issues/1045)) ([8e56695](https://github.com/wmfs/tymly-rankings-plugin/commit/8e566953051e549b99dac09de01b039185dec63f))
+* **deps-dev:** update dependency mocha to v12.0.1 ([#1046](https://github.com/wmfs/tymly-rankings-plugin/issues/1046)) ([c5b1503](https://github.com/wmfs/tymly-rankings-plugin/commit/c5b15032a2d4c9bafa037d0db6274fa1e62504d9))
+* **deps-dev:** update dependency mocha to v12.0.2 ([#1048](https://github.com/wmfs/tymly-rankings-plugin/issues/1048)) ([c50f165](https://github.com/wmfs/tymly-rankings-plugin/commit/c50f16512dc2c6e9cba544c3cee62be02e30bd51))
+* **deps-dev:** update dependency mocha to v12.0.3 ([#1050](https://github.com/wmfs/tymly-rankings-plugin/issues/1050)) ([dd88711](https://github.com/wmfs/tymly-rankings-plugin/commit/dd887116dd9aea3fc250725c966907256f0abf99))
+* **deps:** update dependency lodash to v4.18.1 [security] ([#1017](https://github.com/wmfs/tymly-rankings-plugin/issues/1017)) ([c457eea](https://github.com/wmfs/tymly-rankings-plugin/commit/c457eea6af2eed16f24c44e6f703b9ecc18fd0b4))
+* **deps:** update dependency moment to v2.31.0 [security] ([#1049](https://github.com/wmfs/tymly-rankings-plugin/issues/1049)) ([5157aa5](https://github.com/wmfs/tymly-rankings-plugin/commit/5157aa5318e0332548a05bd8d6904c2b1df5ed44))
+
+### CICD Configuration Changes :construction_worker:
+
+* use github-app-token orb for release token [sc-34101] ([#1055](https://github.com/wmfs/tymly-rankings-plugin/issues/1055)) ([a3f5ee4](https://github.com/wmfs/tymly-rankings-plugin/commit/a3f5ee433433533ebe82c26cb574293a682abb93))
+* use shared renovate preset [sc-34117] ([#1054](https://github.com/wmfs/tymly-rankings-plugin/issues/1054)) ([f586ef9](https://github.com/wmfs/tymly-rankings-plugin/commit/f586ef987491fdf9edad79e406a4e817d26af412))
+
 ## [1.46.1](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.46.0...v1.46.1) (2026-08-13)
 
 ## [1.46.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.45.0...v1.46.0) (2025-10-21)
