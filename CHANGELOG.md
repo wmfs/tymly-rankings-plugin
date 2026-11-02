@@ -1,3 +1,9 @@
+## [1.48.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.47.0...v1.48.0) (2026-11-02)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency debug to v4.4.3 ([#1000](https://github.com/wmfs/tymly-rankings-plugin/issues/1000)) ([abf6a16](https://github.com/wmfs/tymly-rankings-plugin/commit/abf6a16833fb8b5cefab16e4d0a698e423a2486e))
+
 ## [1.47.0](https://github.com/wmfs/tymly-rankings-plugin/compare/v1.46.1...v1.47.0) (2026-10-30)
 
 ### Build system dependencies :hammer:
